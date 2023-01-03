@@ -1,0 +1,26 @@
+.connector_one::after {
+    content: '';
+    width: 0;
+    height: 63%;
+    transform: translateY(59%);
+    position: absolute;
+    border: 3px solid #67C3A6;
+    top: 0;
+    bottom: 0;
+    right: 70%;
+    z-index: -1;
+  }
+
+
+  .connector_two::after {
+    content: '';
+    width: 0;
+    height: 66%;
+    transform: translateY(50%);
+    position: absolute;
+    border: 3px solid #5F82FF;
+    top: 0;
+    bottom: 0;
+    right: 30%;
+    z-index: -1;
+  }

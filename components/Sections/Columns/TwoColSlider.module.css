@@ -1,0 +1,25 @@
+
+.slide_effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 350px;
+  }
+  
+  .slide_effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+
+
+  .custom-arrow-class {
+    background-color: transparent !important;
+  }
+
+  .custom-arrow-class  svg{
+    fill: white !important;
+  }

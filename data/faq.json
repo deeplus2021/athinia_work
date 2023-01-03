@@ -1,0 +1,52 @@
+[
+    {
+        "title": "How do I trust that my data is secure in the Athinia™ platform?",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>Athinia™ is powered by Palantir Foundry, which is used by some of the largest most security-sensitive organizations in the world. Customers have the ability to set tailored and granular permissions to control how exactly their data is shared. Especially sensitive Data that is valuable for collaboration may be obfuscated & normalized so customers can control their information while also protecting their Intellectual Property but still get the benefits of collaboration. You can find more information <a href='https://athinia.com/data-collaboration/security/' target='_blank'>here</a></p>"
+    },
+    {
+        "title": "How will the Athinia™ platform benefit my business?",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>For device makers, Athinia™ offers a secure way to share data with multiple material suppliers creating a vertically integrated manufacturing flow. This continuous flow of information provides insights that accelerate time to material qualification and yield improvement along with a host of other benefits.<br></br>For material suppliers, due to Athinia™’s data security capabilities, device makers are willing to share an unprecedented amount of data. The two-way flow of information allows material suppliers to see how their materials impact performance, quality and yield. The insights generated can lead to faster qualification time, and a clearer understanding of the material parameters that matter the most so you can focus resources and the ability to differentiate as a supplier.<br></br>Key benefits of using Athinia™ could be a faster qualification time, a deeper understanding of of material parameters that matter to focus resources on, and an ability to differentiate material with quality.</p>"
+    },
+    {
+        "title": "How does Athinia™ compliment or improve my existing big data efforts and existing system?",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>Athinia™ works with existing data investments, as the glue between databases in their existing data landscape, or as a greenfield approach to digitalizing raw data sources. Through technology and services, we can help accelerate and scale your digitalization journey even if you are starting from a highly fragmented internal data landscape.</p>"
+    },
+    {
+        "title": "How much effort and resources are required to implement the Athinia™ platform? ",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>The amount of time and resources required will vary based on the current status of your data. The more data being gathered and the more structured it is, the easier onboarding will be.<br></br>In general, there are three high-level steps we follow to get a customer onboarded: <br></br><ul className='px-5' style='padding:0px 50px; list-style-type: decimal;'><li>Data aggregation user training: Get access to data in scope; ingest, transform and model data into re-useable ontology</li><li>Analysis & data validation: deploy analytical toolkits; onboard users to the platform, iterate on and refine internal workflow</li><li>Collaborative analytics: start the first round of anonymized collaborative analyses between the device maker and material supplier and iterate to generate actionable insight</li></ul><br></br>The Athinia™ platform is powered by Palantir Foundry and provided as a fully managed service to our customers. It requires minimal support from the customer’s IT department to maintain the platform which involves managing user access through Single Sign On and network connectivity for data pipelines.</p>"
+    },
+    {
+        "title": "I already have data analytics software. Why do I need Athinia™?",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>Companies can use Athinia™ on top of their existing database investments, as the glue between databases in their existing data landscape, or as a greenfield approach to digitalizing raw data sources. The digital platform complements and can improve on existing big data efforts and systems like MES, YMS, SPC and FDC. The platform provides a no-code/low-code interface that easily connects and organizes data from multiple platforms, limiting the need for more sophisticated approaches such as SQL-based data transformation.<br></br>A digital ecosystem with Athinia™ could help to unlock completely new ways of understanding smart manufacturing, avoiding siloed information & uncovering previously hidden insights that are key to improving manufacturing.<br></br>Athinia™ facilitates data exchange through a secure platform, which ensures data confidentiality to avoid potential misuse and unintended sharing. With Athinia™, businesses share a single source of real-time data without compromising data ownership, governance, privacy, and security. The “many-to-many” data sharing solution focused on materials and materials quality is an industry innovation.</p>"
+    },
+    {
+        "title": "Why does Athinia™ sit under EMD Digital and not the Electronics business of Merck KGaA, Darmstadt, Germany?",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>Athinia™ is a business separate from the Electronics business of Merck KGaA, Darmstadt, Germany. While it was inspired by experiences from the Electronics business, an industry-standard platform needs to be offered and maintained outside of any distinct business sector.<br></br>Athinia™ maintains operational independence, keeping customer data and insights strictly confidential. This organizational structure creates an information firewall between Athinia™ and EMD Electronics, ensuring neutrality and independence.</p>"
+    },
+    {
+        "title": "As a material supplier, why should I work with others?",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>Our platform helps material suppliers focus their time and resources where it counts the most.<br></br>Athinia™ – which is operationally separated from the Merck KGaA’s Electronics business (see above) – has the capabilities and experience to extract the full value of material supplier’s data within months instead of years. Deep value is generated through internal efficiency gains and better collaboration with suppliers’ clients / device makers.<br></br>As scaling and complexity increases, collaboration within the vertical and horizontal supply chain space will benefit the industry. Industry initiatives in data collaboration, such as ‘data first’ bring value to the industry and individual participants in the ecosystem. Also, complex integration schemes rely on the interactions of materials from multiple vendors, even in single unit processes. More collaborative sharing will help suppliers better optimize their materials to work together. </p>"
+    },
+    {
+        "title": "Why is a partnership between EMD Digital and Palantir needed?",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>We have teamed up with Palantir to achieve the best-in-class combination of data + digital expertise with semiconductor industry knowledge. Each party brings something valuable to the table: Palantir has a secure, well-established data analytics platform used across multiple complex industries (Palantir Foundry). EMD Digital and Merck KGaA Darmstadt, Germany, bring long-standing expertise in materials science and innovation in product quality, as well as access and experience in the semiconductor industry. Our partnership introduces a high-quality solution to the semiconductor industry. The combination of an experienced team and systematic onboarding process delivers successful data ecosystems for many industries, including aerospace, pharmaceutical, health care, and automotive.</p>"
+    },
+    {
+        "title": "How is AI used for the unified data and analytics platform? ",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>Artificial intelligence empowers Athinia™ customers with off-the-shelf machine learning models to analyze correlations in their data (through the Palantir Foundry platform). In the Forrester Wave™ AI/ML Platforms, Q3 2022 Report, Palantir received the highest possible ratings in four key criteria. Find more info <a  href='https://www.palantir.com/forrester-wave-2022/' target='_blank'>here</a> being named a leader in Artificial Intelligence and Machine Learning Platforms.<br></br>The analytics stage typically follows several steps – 1) correlation analysis, 2) regression, 3) predictive/prescriptive model building. AI is typically applied in the latter step when there are large data steps and/or a lack of a clear or simple analytical solution. </p>"
+    },
+    {
+        "title": "What does the name Athinia™ mean?",
+        "subTitle": "",
+        "content": "<p className='my-4 text-white text-lg  leading-relaxed'><br></br>The name Athinia™ was inspired by combining two Latin words: Athena (goddess of wisdom) and Notitia (the Latin word for information).</p>"
+    }
+]

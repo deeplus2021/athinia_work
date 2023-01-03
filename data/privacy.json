@@ -1,0 +1,28 @@
+{
+    "generalInfo": {
+        "title": "General information",
+        "subDoc": [
+            {
+                "id": "1.1",
+                "title": "Controller",
+                "body": "The data controller means the company (legal person) who determines the purposes and means of the processing of your personal data. For the overarching processing activities described in this Privacy Statement, Athinia is the data controller. In addition, any affiliate of Athinia that processes personal data might become a controller or joint controller of such data."
+            },
+            {
+                "id":"1.2",
+                "title": "Data Protection Officer",
+                "body": "We have appointed a Data Privacy Officer. If you have any questions or comments, you can contact this person and the team at any time:"
+            }
+        ]
+    },
+    "dataCollected": {
+        "title": "What kind of data is collected and how is it used?",
+        "subDoc": [
+            {
+                "id": "2.1",
+                "title": "Data collection by this website",
+                "body": "Whenever a user accesses the website, the user’s internet browser automatically transfers the following data to Athinia’ s web server:",
+                "list": ["IP address of the requesting computer", "date and time of access", "name and URL of the retrieved file", "transferred data volume", "access status (file transferred, file not found etc.)", "identification data of the browser and operating system used", "name of the provider of user’s internet access", "website from which access is made"]
+            }
+        ]
+    }
+}
