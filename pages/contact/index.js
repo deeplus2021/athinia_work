@@ -18,7 +18,7 @@ const Home = () => {
     const svgRef = useRef(null);
 
     const {scrollYProgress} = useScroll({target: svgRef});
-    const yPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], [0, -450, -400]);
+    const yPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], [800, 0, 0]);
 
     const cardData = [
         {
@@ -56,178 +56,143 @@ const Home = () => {
                     <link rel="icon" href="/cropped-Athinia-favicon-150x150.png"/>
                 </Head>
 
-                <section className="w-full flex-initial h-auto break-words pt-20">
-                    <div className="max-w-screen-xl mx-auto ">
-                        <h1
-                            className="text-sm-large md:text-lg-large my-4 md:my-0 tracking-[-1px]
-                                    text-left px-8 md:px-10 lg:px-8 "
-                        >
+                <section className="w-full flex-initial h-auto break-words 2xl:pt-[5%] xl:pt-[4.8%] lg:pt-[3%] md:pt-[4.5%] sm:pt-[1%] pt-[2em]">
+                    <div style={{padding: "10px", maxWidth: "1400px", marginRight: "auto", marginLeft: "auto"}}>
+                        <h2 className="md:text-lg-large my-4 md:my-0 tracking-[-1px] text-left sm:text-[3em] md:mx-0 md:px-0 sm:mx-5 px-[0.7em] text-[2em]">
                             Get in Contact
-                        </h1>
-                        <div className="relative">
+                        </h2>
+                        <div className="relative overflow-hidden">
                             <motion.small
                                 className="block"
-                                style={{x: yPosAnim}}
-                                ref={svgRef}
-                            >
+                                style={{x:yPosAnim}}
+                                ref={svgRef}>
                                 <Image
                                     src={"/images/icon2.svg"}
                                     alt="icon2"
                                     width={100}
                                     height={100}
-                                    className="ml-[150px] my-5 px-3 md:px-0"
-                                />
+                                    className="lg:w-[100px] md:w-[125px] md:my-5 md:px-0 lg:mb-2 sm:my-0 my-0"/>
                             </motion.small>
                         </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2  px-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2" style={{padding: "10px"}}>
                             <div>
-                                <p className=" md:pl-5 lg:px-0">
+                                <p className="md:pr-5 lg:px-0 lg:mb-0 sm:mb-[48px] sm:pl-4 px-4 mb-[48px]">
                                     Interested in exploring the possibilities Athinia™ can unlock
                                     for your organization? We would love to hear from you.
                                 </p>
                             </div>
-                            <div></div>
                         </div>
+                    </div>
 
-                        <div className="mt-20">
-
-                            <div className="bg-athinia-blue p-5 md:px-10  lg:p-[5%_20%_5%_20%]  md:py-10 lg:py-20">
-
-                                <div className="flex items-center">
-                                    <Image
-                                        src={"/images/RusselKemp-300x300.jpeg"}
-                                        alt="russel"
-                                        width={150}
-                                        height={150}
-                                        className=" w-[90px] ml-5 h-[100px] md:h-[130px] md:w-[130px] rounded-full"
-                                    />
-                                    <div className="ml-8">
-                                        <h3 className="text-sm-medium md:text-lg-medium">
-                                            Russell Kempt
-                                        </h3>
-                                        <h3 className="text-white text-[22px] md:text-[28px]">
-                                            Head of Revenue
-                                        </h3>
+                    <div className="lg:m-[4%_0_5%_0] sm:mb-[5%] mb-[5%]" style={{maxWidth: "1400px", marginRight: "auto", marginLeft: "auto"}}>
+                        <div className="bg-athinia-blue lg:p-[5%_20%_5%_20%] sm:p-[2em] p-[2em]">
+                            <div className="flex">
+                                <Image
+                                    src={"/images/RusselKemp-300x300.jpeg"}
+                                    alt="russel"
+                                    width={150}
+                                    height={150}
+                                    className="sm:h-[125px] sm:w-[125px] h-[97px] w-[97px] rounded-full"
+                                />
+                                <div className="sm:ml-[20px] ml-[20px]">
+                                    <h3 className="text-sm-medium sm:text-lg-medium">
+                                        Russell Kempt
+                                    </h3>
+                                    <h3 className="text-white text-[22px] md:text-[28px]">
+                                        Head of Revenue
+                                    </h3>
+                                </div>
+                            </div>
+                            <div className="md:grid grid-cols-2 md:mt-[20px] md:p-[10px] sm:block block">
+                                <div className="lg:col-span-1">
+                                    {" "}
+                                    <div className="flex md:mr-10 lg:mr-0 my-5 md:my-0">
+                                        <span>
+                                            {" "}
+                                            <FiMail color="white" size={40} className={"md:h-[30px] md:w-[30px]"}/>
+                                        </span>
+                                            {" "}
+                                        <a href="mailto:russell.kempt@athinia.com" className="text-white mx-3">russell.kempt@athinia.com</a>
                                     </div>
                                 </div>
-
-                                <div className="grid grid-cols-5	 md:flex-row	mt-10">
-                                    <div className="col-span-5 md:col-span-2">
-                                        {" "}
-                                        <div className="flex mx-5 md:mr-10  lg:mr-0 my-5 md:my-0">
-                      <span>
-                        {" "}
-                          <FiMail
-                              color="white"
-                              size={40}
-                              className={"md:h-[30px] md:w-[30px]"}
-                          />
-                      </span>{" "}
-                                            <a
-                                                href="mailto:russell.kempt@athinia.com"
-                                                className="text-white  mx-3"
-                                            >
-                                                russell.kempt@athinia.com
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div className="col-span-0 md:col-span-1">
-
-                                    </div>
-                                    <div className="col-span-5 md:col-span-2">
-                                        {" "}
-                                        <div className="flex mx-5 md:mx-0 md:mr-10  lg:mr-0 my-5 md:my-0">
-                      <span>
-                        {" "}
-                          <FaLinkedin
-                              color="white"
-                              size={40}
-                              className={"md:h-[30px] md:w-[30px]"}
-                          />
-                      </span>{" "}
-                                            <a
-                                                target='_blank'
-                                                href="https://www.linkedin.com/in/kempt/"
-                                                className="text-white  mx-3"
-                                            >
-                                                Connect with Russel
-                                            </a>
-                                        </div>
-
+                                {/*<div className="lg:col-span-1"></div>*/}
+                                <div className="lg:col-span-1">
+                                    {" "}
+                                    <div className="flex md:mx-0 md:mr-10  lg:mr-0 my-5 md:my-0">
+                                        <span>
+                                            {" "}
+                                            <FaLinkedin color="white" size={40} className={"md:h-[30px] md:w-[30px]"}/>
+                                        </span>
+                                            {" "}
+                                        <a target='_blank' href="https://www.linkedin.com/in/kempt/" className="text-white mx-3">
+                                            Connect with Russel
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-athinia-dark p-5 md:p-8 lg:p-20">
-                                <div className="grid grid-cols-1 md:grid-cols-2 text-white">
-                                    <div className="mt-4">
-                                        <h1 className="text-sm-large md:text-lg-medium md:pr-10 lg:pr-0">
-                                            Press and Media Inquiries Contact:
-                                        </h1>
-
-                                        <p className="text-athinia-blue my-2">Nuria Aranda Bosch</p>
-                                        <p>Marketing and Communications Manager</p>
-                                        <div className="flex my-2">
-                      <span>
-                        <FiMail
-                            size={40}
-                            className={"md:h-[25px] md:w-[25px]"}
-                        />
-                      </span>
-                                            <a
-                                                className="mx-2"
-                                                href="mailto:nuria.aranda-bosch@athinia.com"
-                                            >
-                                                nuria.aranda-bosch@athinia.com
-                                            </a>
-                                        </div>
+                        </div>
+                        <div className="bg-athinia-dark sm:p-[5%] p-[5%]">
+                            <div className="grid grid-cols-1 md:grid-cols-2 text-white">
+                                <div className="md:p-[10px]">
+                                    <h1 className="text-sm-medium md:text-lg-medium lg:pr-0 md:tracking-[-1px] text-[1.5em]">
+                                        Press and Media Inquiries Contact:
+                                    </h1>
+                                    <p className="text-athinia-blue sm:my-[10px] my-[10px]">Nuria Aranda Bosch</p>
+                                    <p>Marketing and Communications Manager</p>
+                                    <div className="flex my-2">
+                                        <span>
+                                            <FiMail size={40} className={"md:h-[25px] md:w-[25px]"}/>
+                                        </span>
+                                        <a className="mx-2" href="mailto:nuria.aranda-bosch@athinia.com">
+                                            nuria.aranda-bosch@athinia.com
+                                        </a>
                                     </div>
-                                    <div>
-                                        <div className="flex my-5 hover:text-athinia-green">
-                      <span>
-                        <FaThumbtack
-                            size={40}
-                            className={"md:h-[25px] md:w-[25px] md:mt-2 lg:mt-0"}
-                        />
-                      </span>
-                                            <a
-                                                className="mx-2 "
-                                                target="_blank"
-                                                href="https://www.google.com/maps/place/245+First+St,+Cambridge,+MA+02142/@42.363518,-71.0812198,17z/"
-                                            >
-                                                245 First Street, Floor 18, Cambridge,&nbsp;MA 02142
-                                            </a>
-                                        </div>
-                                        <div className="flex my-5 hover:text-athinia-green">
-                      <span>
-                        <FaLinkedinIn
-                            size={40}
-                            className={"md:h-[25px] md:w-[25px]"}
-                        />
-                      </span>
-                                            <a
-                                                className="mx-2"
-                                                target="_blank"
-                                                href="https://www.linkedin.com/company/athinia"
-                                            >
-                                                @athinia
-                                            </a>
-                                        </div>
-                                        <div className=" flex my-5 hover:text-athinia-green">
-                      <span>
-                        <FaTwitter
-                            size={40}
-                            className={"md:h-[25px] md:w-[25px]"}
-                        />
-                      </span>
-                                            <a
-                                                className="mx-2"
-                                                target="_blank"
-                                                href="https://twitter.com/Data4Pioneers"
-                                            >
-                                                @Data4Pioneers
-                                            </a>
-                                        </div>
+                                </div>
+                                <div className="lg:p-[10px]">
+                                    <div className="flex mb-5 hover:text-athinia-green">
+                                        <span>
+                                            <FaThumbtack
+                                                size={40}
+                                                className={"md:h-[25px] md:w-[25px] md:mt-2 lg:mt-0"}
+                                            />
+                                        </span>
+                                        <a
+                                            className="mx-4"
+                                            target="_blank"
+                                            href="https://www.google.com/maps/place/245+First+St,+Cambridge,+MA+02142/@42.363518,-71.0812198,17z/"
+                                        >
+                                            245 First Street, Floor 18, Cambridge,&nbsp;MA 02142
+                                        </a>
+                                    </div>
+                                    <div className="flex my-5 hover:text-athinia-green">
+                                        <span>
+                                            <FaLinkedinIn
+                                                size={40}
+                                                className={"md:h-[25px] md:w-[25px]"}
+                                            />
+                                        </span>
+                                        <a
+                                            className="mx-4"
+                                            target="_blank"
+                                            href="https://www.linkedin.com/company/athinia"
+                                        >
+                                            @athinia
+                                        </a>
+                                    </div>
+                                    <div className=" flex my-5 hover:text-athinia-green">
+                                        <span>
+                                            <FaTwitter
+                                                size={40}
+                                                className={"md:h-[25px] md:w-[25px]"}
+                                            />
+                                        </span>
+                                        <a
+                                            className="mx-4"
+                                            target="_blank"
+                                            href="https://twitter.com/Data4Pioneers"
+                                        >
+                                            @Data4Pioneers
+                                        </a>
                                     </div>
                                 </div>
                             </div>

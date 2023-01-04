@@ -4,17 +4,17 @@ const TwoCards = ({ titlePosition, title, cardData }) => {
   console.log(cardData)
   const finalCards = cardData.map((item) => {
     return (
-      <div className="card-1 bg-white p-[30px] md:p-10">
-        <p className="text-athinia-green text-sm-small">{item.category}</p>
+      <div className="card-1 bg-white p-[45px_30px_15px_30px] md:mb-0 sm:mb-5 mb-5">
+        <p className="text-athinia-green text-sm-small lg:text-[18px] text-[0.8em]">{item.category}</p>
         <h3
-          className="text-[1.8em] font-medium lg:text-sm-medium my-4 md:my-0 
-                            text-left  "
+          className="lg:text-[1.8em] text-[1.6em] font-medium lg:text-sm-medium my-4 md:my-0 my-0
+                            text-left"
         >
           {item.cardTitle}
         </h3>
-        <p className="my-5 md:text-[18px] lg:text-[100%]">{item.cardDescription}</p>
+        <p className="my-6 md:text-[18px] lg:text-[100%]">{item.cardDescription}</p>
         <div className="my-5">
-          <Link className="text-athinia-blue " href={item.cardlink}>
+          <Link className="text-athinia-blue lg:text-[18px] text-[0.8em]" href={item.cardlink}>
             READ MORE
           </Link>
         </div>
@@ -23,13 +23,9 @@ const TwoCards = ({ titlePosition, title, cardData }) => {
   });
 
   return (
-    <section
-      className="w-full flex-initial h-auto
-    break-words py-20 mt-5  lg:mt-20 bg-athinia-gray"
-    >
-      <div className="max-w-[1400px] p-8 mx-auto px-8 xl:px-0">
-        <h1
-          className={`text-sm-large md:text-lg-large my-4 md:my-0 tracking-[-1px] 
+    <section className="w-full flex-initial h-auto break-words sm:py-[8%] py-[8%] bg-athinia-gray">
+      <div className="max-w-[1400px] mx-auto" style={{padding: "10px"}}>
+        <h1 className={`text-sm-medium md:text-lg-large my-4 md:my-0 tracking-[-1px] lg:mt-[20px] sm:text-[1.5em]
                                     ${
                                       titlePosition
                                         ? titlePosition
@@ -38,7 +34,7 @@ const TwoCards = ({ titlePosition, title, cardData }) => {
         >
           {title}
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-4 mt-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 lg:gap-[30px] mt-5">
           {finalCards}
         </div>
       </div>
