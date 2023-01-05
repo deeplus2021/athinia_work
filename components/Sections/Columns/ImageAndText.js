@@ -5,7 +5,7 @@ const ImageAndText = ({isImage=true, subText, category, title, lgPadding,  title
   return (
     <section
       className={`bg-offering-image bg-no-repeat bg-contain bg-right-bottom md:bg-[60vw_45vw] lg:bg-[70vw_0vw] w-full bg-athinia-dark flex-initial h-auto
-              break-words py-20   md:p-[18%_0%_18%_0%]  ${lgPaddingFinal} bg-[length:50vw_auto]`}
+              break-words pt-[4.5rem] pb-[5.5rem]  md:p-[18%_0%_18%_0%]  ${lgPaddingFinal} bg-[length:50vw_auto]`}
     
     >
       <div
@@ -13,8 +13,8 @@ const ImageAndText = ({isImage=true, subText, category, title, lgPadding,  title
         max-w-[1400px] p-[0_2em_0_2em] md:p-8 lg:p-3 mx-auto "
       >
         <div className="col-span-2 text-white px-0 lg:pr-[13rem]">
-            <p className="text-lg-small border-b-4 inline border-athinia-green pb-2 my-2 md:my-0">{category}</p>
-            <h3 className={`${titleClass} py-5 md:pr-5 lg:pr-0 md:letter-spacing--1`}> {title}
+            <p className="text-lg-small border-b-4 inline border-athinia-green pb-3 md:pb-2 my-2 md:my-0">{category}</p>
+            <h3 className={`${titleClass} pt-[2rem] pb-[1.2rem] md:py-5 md:pr-5 lg:pr-0 md:letter-spacing--1`}> {title}
 </h3>
 <p>{subText}</p>
         </div>

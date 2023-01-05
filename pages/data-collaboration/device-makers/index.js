@@ -91,14 +91,14 @@ const Home = () => {
         />
         <section
           className="w-full flex-initial h-auto
-            break-words pt-0     md:pt-20"
+            break-words pt-0     md:pt-[6rem]"
         >
           <div
             className="grid grid-cols-1 md:grid-cols-3
             max-w-[1400px] 
-            mx-auto md:px-8"
+            mx-auto md:px-8 lg:px-2"
           >
-            <h3 className="text-athinia-green font-semibold text-[2.5em] pl-8 pt-10 md:pl-0 lg:pl-0">
+            <h3 className="text-athinia-green font-weight-500 text-[2.5em] pl-8 pt-10 md:pl-0 lg:pl-0">
               How It Works
             </h3>
           </div>
@@ -110,6 +110,10 @@ const Home = () => {
           subTitle={"Consolidated view of all relevant data"}
           isTitleCol={true}
           iconColor={"fill-athinia-purple"}
+          extraClass={"lg:px-2 lg:letter-spacing--1"}
+          boxClass={"lg:mr-0"}
+          subTitleClass={"letter-spacing-05"}
+          listClass={"lg:ml-[3rem] lg:mt-4 lg:letter-spacing-01"}
         />
         <Content1
           spacing="pt-0"
@@ -120,6 +124,8 @@ const Home = () => {
           }
           isTitleCol={true}
           iconColor={"fill-athinia-blue"}
+          boxClass={"lg:pl-0"}
+          listClass={"lg:ml-[4rem]"}
         />
         <Content2
           allList={allUlList3}
@@ -129,17 +135,23 @@ const Home = () => {
           }
           isTitleCol={true}
           iconColor={"fill-athinia-green"}
+          extraClass={"lg:px-2 lg:letter-spacing--1"}
+          boxClass={"lg:mr-0"}
+          subTitleClass={"letter-spacing-05"}
+          listClass={"lg:ml-[3rem] lg:mt-4 lg:letter-spacing-01"}
         />
         <BlueSection
           content={
             "Athinia™ enables device makers to create the next generation semiconductor data ecosystem enlisting the entire value chain."
           }
           wrapperPadding={'md:py-0'}
-          contentPadding={'p-[2.2em] md:p-[5%]'}
+          contentPadding={'p-[2.2em] md:p-[5%] lg:p-[7%]'}
         />
 
         <DataSecurity />
-        <GetInContact />
+        <GetInContact 
+          subTitle="Athinia™ unlocks a new standard in data management for the semiconductor industry​."
+          />
       </div>
       <Footer />
     </>

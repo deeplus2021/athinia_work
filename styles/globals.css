@@ -27,6 +27,12 @@
     .letter-spacing--2 {
       letter-spacing: -2px;
     }
+    .letter-spacing-01 {
+      letter-spacing: 0.1px;
+    }
+    .letter-spacing-05 {
+      letter-spacing: 0.5px;
+    }
     .letter-spacing-06 {
       letter-spacing: 0.6px;
     }
@@ -35,6 +41,9 @@
     }
     .font-weight-0 {
       font-weight: 300 !important;
+    }
+    .font-weight-500 {
+      font-weight: 500 !important;
     }
     .line-height-1 {
       line-height: 1em !important;
@@ -56,6 +65,9 @@
     }
     .font-size-3em {
       font-size: 3em !important;
+    }
+    .text-blue {
+      color: #172337;
     }
 
     @media (max-width: 768px) {

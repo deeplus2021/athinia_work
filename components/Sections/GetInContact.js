@@ -5,7 +5,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 
-const GetInContact = () => {
+const GetInContact = ({
+  subTitle = ""
+}) => {
   const svgRefGreen = useRef(null);
   const svgRefPurple = useRef(null);
   const svgRefBlueOne = useRef(null);
@@ -89,22 +91,21 @@ const GetInContact = () => {
     break-words p-[8%_0%_14%_0%] px-10 md:px-0"
     >
       <div className=" grid grid-cols-5 gap-0 max-w-[1400px]  mx-auto ">
-        <div className="col-span-5 md:col-span-4 lg:pr-10">
+        <div className="col-span-5 md:col-span-4 lg:ml-2 lg:pr-10">
           <h1
-            className="text-sm-large md:text-[48px] lg:text-lg-large my-4 md:my-0 tracking-[-1px] 
+            className="text-sm-large md:text-[48px] lg:text-lg-large my-4 md:my-0 tracking-[-1.5px] 
 
 
-                                    text-left "
+                                    text-left text-blue"
           >
             Come be a pioneer.​
           
           </h1>
           <h3
             className="text-sm-medium md:text-lg-medium tracking-[-1px] 
-                    text-left text-athinia-purple  pr-3 md:pr-5 lg:pr-0"
+                    text-left text-athinia-purple  pr-3 md:pr-5 lg:pr-0 lg:mt-4"
           >
-            Athinia™ is establishing a new standard of quality management for
-            the semiconductor industry​.
+            {subTitle ? subTitle : 'Athinia™ is establishing a new standard of quality management for the semiconductor industry​.'}
           </h3>
 
           <CustomButton
@@ -113,10 +114,10 @@ const GetInContact = () => {
             wrapperClass={"my-20"}
             link="\contact"
             extraClass={
-              "text-white text-center inline xl:block hover:bg-athinia-purple text-[1.2em] "
+              "text-white text-center inline xl:block hover:bg-athinia-purple text-[1.2em] tracking-[1px] "
             }
             paddingY={"py-4"}
-            paddingX={"px-8"}
+            paddingX={"px-8 lg:px-[30px]"}
 
             background={"bg-athinia-blue"}
           />

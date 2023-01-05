@@ -9,7 +9,9 @@ const Content1 = ({
   subTitle,
   icon = true,
   isTitleCol = false,
-  spacing='pt-20'
+  spacing='pt-20',
+  boxClass="",
+  listClass=""
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -21,7 +23,7 @@ const Content1 = ({
     >
       <div
         className="grid grid-cols-1 md:grid-cols-3
-        max-w-[1400px] md:px-8 md:py-8  lg:py-2 lg:px-4 mx-auto "
+        max-w-[1400px] md:px-8 md:py-8  lg:py-2 lg:px-2 mx-auto "
       >
         <div className="col-span-1">
           <div className={`text-athinia-${textColor} px-[2rem] py-10 md:p-0 lg:p-0 `}>
@@ -54,10 +56,10 @@ const Content1 = ({
           </div>
         </div>
 
-        <div className="col-span-2 px-[1.8rem] pt-5 md:pt-0 md:px-10 lg:pl-10 md:pr-3 lg:pr-0">
+        <div className={`col-span-2 px-[1.8rem] pt-5 md:pt-0 md:px-10 md:pr-3 lg:pr-0 ${boxClass ? boxClass : 'lg:pl-10'}`}>
           {isTitleCol ? (
-            <div className={`text-athinia-${textColor} my-5  p-0   md:p-3 `}>
-              <h3 className="text-sm-medium  my-5 md:text-lg-medium ">
+            <div className={`text-athinia-${textColor} my-5 lg:mb-1  p-0   md:p-3 `}>
+              <h3 className="text-sm-medium  my-5 lg:mb-3 md:text-lg-medium ">
                 {title}
               </h3>
               <h3 className="text-lg-small md:text-lg-small  text-athinia-green">
@@ -67,7 +69,7 @@ const Content1 = ({
           ) : (
             ""
           )}
-          <ul className={`list-disc ${isTitleCol && "ml-10"}" ml-5`}>
+          <ul className={`list-disc ${isTitleCol && "ml-10"}" ${listClass ? listClass : 'ml-5'}`}>
             {allList.map((item) => (
               <li className="text-sm-small  md:text-[18px] lg:text-sm-small">
                 {item}
