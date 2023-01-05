@@ -77,7 +77,7 @@ const Home = () => {
         </Head>
 
         <ImageAndText
-         lgPadding="lg:p-[10%_0%_15%_0%]"
+         lgPadding="lg:p-[10%_0%_12%_0%]"
           isImage={false}
           subText="With Athinia™’s ability to safeguard data, you can feel confident in sharing information with material suppliers and creating a virtually and vertically integrated manufacturing flow. This unprecedented sharing of data can accelerate yield and overall performance."
           title="Imagine all you could do with a real-time connection to your customers?"

@@ -24,7 +24,7 @@ const Content2 = ({
         className="grid grid-cols-1 md:grid-cols-3
         max-w-[1400px] md:px-8 md:py-8  lg:py-2 lg:px-8  mx-auto md:overflow-hidden xl:overflow-visible"
       >
-        <div className="col-span-2 order-last md:order-first px-10 md:px-0 lg:pr-20">
+        <div className="col-span-2 order-last md:order-first px-[1.8rem] md:px-10 lg:px-0 md:pl-5 md:pr-[4rem] lg:pr-10">
           {isTitleCol ? (
             <div className="my-5">
               <h3 className="text-sm-medium md:text-lg-medium my-5 text-athinia-green">
@@ -37,9 +37,9 @@ const Content2 = ({
           ) : (
             ""
           )}
-          <ul className={`list-disc ${isTitleCol && "ml-10"} ml-10`}>
+          <ul className={`list-disc ${isTitleCol && "ml-10"} ml-[1.5rem] md:ml-[2rem]`}>
             {allList.map((item) => (
-              <li className="text-sm-small md:text-[16px] font-[100]	 ">{item}</li>
+              <li className="text-sm-small md:text-[18px] font-[100]	 ">{item}</li>
             ))}
           </ul>
        
@@ -47,9 +47,9 @@ const Content2 = ({
 
         <div className="col-span-1">
           {!isTitleCol ? (
-            <div className="text-athinia-green p-10   pb-10 md:p-0">
+            <div className="text-athinia-green px-[2rem] pt-[2rem] pb-[4rem] md:p-0 md:pl-10">
               <>
-                <h3 className="text-sm-medium md:text-lg-medium  ">{title}</h3>
+                <h3 className="text-sm-medium md:text-lg-medium  lg:ml-[1.6rem]">{title}</h3>
                 <h3 className="text-sm-medium md:text-lg-small  ">
                   {subTitle}
                 </h3>

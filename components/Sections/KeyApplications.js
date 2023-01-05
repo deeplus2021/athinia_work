@@ -18,7 +18,7 @@ const KeyApplications = () => {
     <>
       <section
         className="w-full flex-initial h-auto
-            break-words bg-athinia-gray p-[.5em] md:p-[4em]"
+            break-words bg-athinia-gray p-[.5em] md:p-[2em] md:py-[4em] lg:p-[4em]"
       >
         <div
           className="grid grid-cols-1 
@@ -26,13 +26,13 @@ const KeyApplications = () => {
                  items-center text-center mx-auto relative py-10 md:py-0 px-[1.5em] md:px-0"
         >
           <div className="text-left md:text-center">
-            <h3 className="text-sm-medium md:text-sm-large md:letter-spacing--1">
+            <h3 className="text-sm-medium md:text-sm-large md:letter-spacing--1 md:line-height-15 lg:line-height-13">
               We build customized offerings to address data collaboration and
               help improve semiconductor manufacturing. Key applications may
               include:
             </h3>
           </div>
-          <div className="grid md:grid-cols-3 gap-x-8 md:gap-x-0 lg:gap-x-8 mt-5 md:mt-0">
+          <div className="grid md:grid-cols-3 gap-x-8 md:gap-x-0 lg:gap-x-8 mt-5 md:mt-5 lg:mt-0">
             <div className="flex flex-row md:flex-col lg:flex-row  ">
               <div className="md:px-3 ">
                 <div className="">
@@ -57,7 +57,7 @@ const KeyApplications = () => {
               </div>
               <div className="px-3 md:px-0 lg:px-3 text-left  md:text-center lg:text-left">
                 <div className="text-athinia-blue text-sm-medium  lg:text-lg-medium">
-                  <h3 className="" style={{ fontSize: '1.5rem' }}>Quality</h3>
+                  <h3 className="md:mt-5 lg:mt-0" style={{ fontSize: '1.5rem' }}>Quality</h3>
                 </div>
                 <div className="text-athinia-dark  pt-3">
                   <p>
@@ -89,7 +89,7 @@ const KeyApplications = () => {
               </div>
               <div className="px-3 md:px-0 lg:px-3 text-left md:text-center lg:text-left">
                 <div className="text-athinia-purple text-sm-medium  lg:text-lg-medium">
-                  <h3 className="" style={{ fontSize: '1.5rem' }}>Supply Chain</h3>
+                  <h3 className="md:mt-5 lg:mt-0" style={{ fontSize: '1.5rem' }}>Supply Chain</h3>
                 </div>
                 <div className="text-athinia-dark  pt-3">
                   <p>
@@ -118,7 +118,7 @@ const KeyApplications = () => {
               </div>
               <div className="px-3 md:px-0 lg:px-3 text-left  md:text-center lg:text-left">
                 <div className="text-athinia-green text-sm-medium  lg:text-lg-medium">
-                  <h3 className="" style={{ fontSize: '1.5rem' }}>Sustainability</h3>
+                  <h3 className="md:mt-5 lg:mt-0" style={{ fontSize: '1.5rem' }}>Sustainability</h3>
                 </div>
                 <div className="text-athinia-dark  pt-3">
                   <p>
@@ -133,7 +133,7 @@ const KeyApplications = () => {
 <div className="relative grid justify-items-end">
 <motion.small ref={svgRefGreen} style={{x:yPosAnimGreen, y:width >= 768 ? 95 : 18}} className="block w-[100px] md:w-[175px]">
      
-          <Image src={"/images/icon2.svg"} height={150} width={175} />
+          <Image src={"/images/icon2.svg"} height={150} width={width > 1024 ? 175 : 125} />
         </motion.small>
 </div>
       </section>

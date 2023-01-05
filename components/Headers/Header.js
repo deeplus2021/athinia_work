@@ -39,7 +39,7 @@ export default function Header() {
               <img 
                 className={classNames(
                   scrollPosition > scrollBoundary ? "lg:scale-75 lg:ml-[-20px]" : "",
-                  "w-[100px] lg:w-[175px] h-16 md:h-[69px] transition-all duration-300 ease-in-out delay-300 ml-5 md:ml-0"
+                  "w-[100px] lg:w-[175px] h-16 md:h-[69px] md:w-[140px] transition-all duration-300 ease-in-out delay-300 ml-5 md:ml-0"
                 )}
                 src="/Athinia-logo-light.svg" 
                 alt="Athinia Logo" 

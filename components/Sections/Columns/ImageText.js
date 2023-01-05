@@ -25,16 +25,16 @@ const ImageText = () => {
     >
       <div
         className="grid grid-cols-1 md:grid-cols-2
-              min-h-[50vh] md:min-h-[90vh] lg:min-h-[100vh] max-w-[1400px] p-[2em] md:py-[2em] md:px-[0em] lg:p-[2em]
+              min-h-[50vh] md:min-h-[90vh] lg:min-h-[100vh] max-w-[1400px] p-[2em] md:py-[2em] md:px-[0em] lg:pt-0 lg:p-[1.5em]
               mx-auto items-center "
       >
         <div
           className="bg-ecosystem-image bg-contain bg-center bg-no-repeat 
-                              h-[300px] w-100 md:h-[400px] xl:h-[600px] xl:w-[650px] xl:min-h-[800px] lg:min-h-[550px]"
+                              h-[300px] w-100 md:h-[400px] xl:h-[600px] xl:w-[670px] xl:min-h-[800px] lg:min-h-[550px]"
 
         ></div>
 
-        <div className=" pt-5 md:pt-0 md:px-0 relative md:mb-20 lg:mb-10">
+        <div className=" pt-5 md:pt-0 md:px-0 relative md:mb-20 lg:ml-5">
           <motion.div ref={textRef} style={{y: width < 768 ? '' : yPosAnimText}}>
           <h3
             className="text-sm-medium md:text-[38px] lg:text-lg-medium tracking-[-1px] 

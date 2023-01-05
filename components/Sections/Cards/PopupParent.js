@@ -6,9 +6,9 @@ const PopupParent = ({ title, subTitle, content, titleClass = 'k text-athinia-bl
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div     className="bg-white hover:cursor-pointer   hover:text-athinia-dark  px-5 py-3 lg:p-[30px] grid grid-cols-9 md:grid-cols-6 mt-5">
+    <div     className="bg-white hover:cursor-pointer   hover:text-athinia-dark  px-5 py-3 md:p-[30px] grid grid-cols-9 md:grid-cols-6 mt-5">
       <div onClick={() => setShowModal(true)} className="col-span-8 md:col-span-5">
-        <h1 className={`${titleClass} hover:text-athinia-dark lg:letter-spacing--1 lg:line-height-1`}>{title}</h1>
+        <h1 className={`${titleClass} hover:text-athinia-dark md:letter-spacing--1 md:line-height-1`}>{title}</h1>
         <p className="text-athinia-blue md:text-lg-small text-08 font-sm-bold">{subTitle}</p>
       </div>
 

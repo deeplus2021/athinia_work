@@ -76,7 +76,7 @@ const WhatsPossible = () => {
         <div
           className="grid grid-cols-1 
           max-w-[1400px] p-8 md:p-0 lg:p-2
-                 items-center relative mx-auto my-5 md:my-20"
+                 items-center relative mx-auto my-5 md:my-10 lg:my-20"
         >
           <div>
             <h3 className="text-athinia-dark text-center text-sm-medium md:text-lg-medium">

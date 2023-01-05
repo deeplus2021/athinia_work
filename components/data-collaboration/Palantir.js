@@ -5,13 +5,13 @@ const Palantir = () => {
   return (
     <section
       className="w-full flex-initial h-auto
-            break-words  py-20 "
+            break-words  md:py-10 lg:py-20 "
     >
       <div
         className="grid grid-cols-1 md:grid-cols-3
-        max-w-[1400px] md:p-8 mx-auto lg:px-0"
+        max-w-[1400px] lg:p-8 mx-auto lg:px-0 mb-3"
       >
-        <div className="col-span-1 px-10 md:p-0 md:mr-auto md:ml-auto lg:mr-0 lg:ml-0">
+        <div className="col-span-1 px-[2rem] my-5 md:my-0 md:px-10 md:p-0 md:mr-auto md:ml-auto lg:mr-0 lg:ml-0 lg:pl-4">
           <svg
             className="w-[250px] md:w-[150px] lg:w-[250px] xl:w-[350px]"
             width={350}
@@ -34,16 +34,17 @@ const Palantir = () => {
           </svg>
         </div>
 
-        <div className="col-span-2 p-10 md:px-10 md:py-0 lg:p-0 ">
-          <h3 className="text-sm-medium md:text-lg-medium  ">
+        <div className="col-span-2 p-10 px-[2rem] md:px-5 md:py-0 lg:p-0 lg:px-4">
+          <h3 className="text-sm-medium md:text-lg-medium lg:letter-spacing--1">
             Foundry’s dynamic, granular security controls are layered on top of
-            a robust base — secure by default, yet highly-configurable
+            a robust base — secure by default, yet highly-configurable.
           </h3>
           <CustomButton
           target="_blank"
             link={'https://www.palantir.com/docs/foundry/security/data-protection-and-governance/'}
-            wrapperClass={"my-10 "}
-            paddingX={'px-10'}
+            wrapperClass={"my-10 lg:my-[2rem] letter-spacing-1"}
+            paddingX={'px-[1.7rem]'}
+            paddingY={'py-5 md:py-4'}
             text={"LEARN MORE"}
             background={"bg-athinia-blue"}
             extraClass={"text-white inline lg:block hover:bg-athinia-purple text-[1.2em]"}

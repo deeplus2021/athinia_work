@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 import { useRef } from "react";
 
 const Features = () => {
   const svgRef = useRef(null);
   const svgRefGreen = useRef(null);
+  const { width } = useWindowDimensions();
 
   const { scrollYProgress } = useScroll({ target: svgRef });
   const { scrollYProgress: scrollYProgressGreen  } = useScroll({
@@ -34,7 +36,7 @@ const Features = () => {
                     mx-auto items-center relative"
       >
         <div className="col-span-2 text-white ">
-          <h3 className="mb-3 md:mb-20 text-sm-medium md:text-lg-medium">
+          <h3 className="mb-3 md:mb-20 text-sm-medium md:text-lg-medium md:letter-spacing--2 lg:letter-spacing-0">
             By making data exchange easy and safe, and enabling the use of
             advanced analytics, Athinia™ can help materials suppliers and device
             makers uncover novel insights that improve semiconductor
@@ -52,7 +54,7 @@ const Features = () => {
                 src={"/images/icon4.svg"}
                 alt="icon-4"
                 className="ml-auto mr-auto"
-                width={41}
+                width={ width > 1024 ? 41 : 28}
                 height={41}
               />
             </motion.div>

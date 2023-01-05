@@ -71,12 +71,12 @@ const LearnMore = ({
 
   return (
     <section
-      className="w-full h-auto md:h-[75vh] lg:h-[100vh]   flex-initial h-auto
+      className="w-full h-auto md:h-[100vh] lg:h-[100vh]   flex-initial h-auto
                     break-words "
     >
       <div
         className={`grid grid-cols-1 md:grid-cols-2 ${finalGap} 
-                      max-w-[1400px] h-auto md:h-[75vh] lg:h-[100vh] py-5 md:py-0 px-8 md:px-4 lg:px-8 lg:pr-0
+                      max-w-[1400px] h-auto md:h-[100vh] lg:h-[100vh] py-5 md:py-0 px-8 md:px-4 lg:px-8 lg:pr-0
                     mx-auto ${itemsCenter ? "items-center" : ""} relative  content-center`}
       >
         <div className={`${colOneOrderSM} md:pl-4 md:order-first  relative`}>
@@ -151,7 +151,7 @@ const LearnMore = ({
           </div>
         </div>
 
-        <div className={`${secondColClass} ${colTwoOrderSM} md:px-10 lg:px-0 md:order-last xl:w-[662px] px-4 md:px-0 letter-spacing-06 md:letter-spacing-0`}>
+        <div className={`${secondColClass} ${colTwoOrderSM} md:px-5 lg:px-0 md:order-last xl:w-[662px] px-4 letter-spacing-06 md:letter-spacing-0`}>
           <h3
             className={`text-sm-medium md:text-lg-medium tracking-[-1px] 
                                     text-left text-athinia-dark mb-[20px] ${textClass}`}

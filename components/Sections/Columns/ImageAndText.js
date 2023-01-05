@@ -10,11 +10,11 @@ const ImageAndText = ({isImage=true, subText, category, title, lgPadding,  title
     >
       <div
         className="grid grid-cols-1 md:grid-cols-3 flex flex-col md:flex-row
-        max-w-[1400px] p-[2em] md:p-8 lg:p-3 mx-auto "
+        max-w-[1400px] p-[0_2em_0_2em] md:p-8 lg:p-3 mx-auto "
       >
-        <div className="col-span-2 text-white px-0 lg:pr-20">
-            <p className="text-lg-small border-b-4 inline border-athinia-green pb-1 my-2 md:my-0">{category}</p>
-            <h3 className={`${titleClass} py-5 md:pr-5 lg:pr-0`}> {title}
+        <div className="col-span-2 text-white px-0 lg:pr-[13rem]">
+            <p className="text-lg-small border-b-4 inline border-athinia-green pb-2 my-2 md:my-0">{category}</p>
+            <h3 className={`${titleClass} py-5 md:pr-5 lg:pr-0 md:letter-spacing--1`}> {title}
 </h3>
 <p>{subText}</p>
         </div>

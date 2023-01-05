@@ -10,7 +10,7 @@ const TwoColSlider = () => {
   return (
     <section
       className="w-full flex-initial h-auto
-  break-words  mt-5 md:mt-20"
+  break-words  mt-5 lg:mt-20"
     >
       {" "}
       <Splide

@@ -40,18 +40,18 @@ const Benefits = () => {
   );
   return (
     <section
-      className="w-full  min-h-[50vh] md:min-h-[60vh] flex-initial h-auto
+      className="w-full  min-h-[50vh] md:min-h-[85vh] lg:min-h-[60vh] flex-initial h-auto
                     break-words py-10 md:py-0 px-[2em]"
     >
       <div
         className="grid grid-cols-1 md:grid-cols-2 gap-x-12  md:gap-x-0 xl:gap-x-2
-                     max-w-[1400px]  min-h-[50vh] md:min-h-[60vh] md:p-0 lg:px-5 lg:mt-1
+                     max-w-[1400px]  min-h-[50vh] md:min-h-[85vh] lg:min-h-[60vh] md:p-0 lg:px-5 lg:mt-1
                     mx-auto relative"
       >
-        <div className="md:mt-36">
+        <div className="md:my-auto lg:mt-36">
           <h3
             className="text-sm-medium md:text-sm-large
-                                    text-left text-athinia-dark mb-[20px]"
+                                    text-left text-athinia-dark mb-[20px] md:letter-spacing--2 lg:letter-spacing-0"
           >
             Benefits for pioneering companies
           </h3>
@@ -106,7 +106,7 @@ const Benefits = () => {
           </div>
         </div>
 
-        <div className="lg:ml-5">
+        <div className="my-auto lg:ml-5">
           <div
             className="h-[100px] w-[100px] md:h-[130px] md:w-[135px] lg:h-[10px] lg:w-[150px] xl:w-[175px]
                                        md:mt-20 mr-4 float-right relative z-[-1]"

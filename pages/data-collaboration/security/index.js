@@ -59,6 +59,7 @@ const Home = () => {
           title={"Infrastructure Security"}
           iconColor={"fill-athinia-green"}
           allList={ulListContent1}
+          spacing={"pt-20 mt-5 md:mt-20"}
         />  
             <Content2
           title={"Data Governance"}
