@@ -11,8 +11,10 @@ const Content2 = ({
   spacing = "pt-20 mb-10",
   extraClass = "",
   boxClass = "",
+  titleClass = "",
   subTitleClass = "",
-  listClass = ""
+  listClass = "",
+  animationClass = ""
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -28,10 +30,10 @@ const Content2 = ({
         className={`grid grid-cols-1 md:grid-cols-3
         max-w-[1400px] md:px-8 md:py-8  lg:py-2 lg:px-8  mx-auto md:overflow-hidden xl:overflow-visible ${extraClass}`}
       >
-        <div className={`col-span-2 order-last md:order-first px-[1.8rem] md:px-10 lg:px-0 md:pl-5 md:pr-[4rem] ${boxClass ? boxClass : 'lg:pr-10'}`}>
+        <div className={`col-span-2 order-last md:order-first px-[1.8rem] md:px-10 lg:px-0 ${boxClass ? boxClass : 'md:pl-5 md:pr-[4rem] lg:pr-10'}`}>
           {isTitleCol ? (
             <div className="">
-              <h3 className="text-sm-medium md:text-lg-medium my-5 lg:mt-2 text-athinia-green">
+              <h3 className={`text-sm-medium md:text-lg-medium my-5 lg:mt-2 text-athinia-green ${titleClass}`}>
                 {title}
               </h3>
               <h3 className={`text-lg-small md:text-lg-small  text-athinia-green ${subTitleClass}`}>
@@ -41,7 +43,7 @@ const Content2 = ({
           ) : (
             ""
           )}
-          <ul className={`list-disc ${isTitleCol && "ml-10"} ml-[1.5rem] md:ml-[2rem] ${listClass ? listClass : 'lg:ml-[1.5rem]'}`}>
+          <ul className={`list-disc ${isTitleCol && "ml-10"} ${listClass ? listClass : 'ml-[1.5rem] md:ml-[2rem] lg:ml-[1.5rem]'}`}>
             {allList.map((item) => (
               <li className="text-sm-small md:text-[18px] font-[100]	 ">{item}</li>
             ))}
@@ -65,7 +67,7 @@ const Content2 = ({
           <div className="hidden md:block ">
             <div
            
-              className={`h-[300px] xl:w-[350px] lg:w-[300px] rotate-180 md:w-[220px] flex items-center order-first `}
+              className={`h-[300px] xl:w-[350px] lg:w-[300px] rotate-180 md:w-[220px] flex items-center order-first ${animationClass}`}
             >
               {icon ? (
                 <svg

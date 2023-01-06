@@ -60,7 +60,7 @@ const Home = () => {
     <>
       <Header />
 
-      <div className="flex min-h-screen flex-col items-center  mb-20">
+      <div className="flex min-h-screen flex-col items-center mb-[1rem] md:mb-[4.5rem] lg:mb-[9rem]">
         <Head>
           <title>
             Athinia &#x2022; Smart data collection & collaborative analytics
@@ -72,7 +72,14 @@ const Home = () => {
           <link rel="icon" href="/cropped-Athinia-favicon-150x150.png" />
         </Head>
 
-        <ImageAndText titleClass="text-sm-medium md:text-[2.5em]" category={'Offering for Material Suppliers'} title={'Imagine all you could do with a real-time connection to your customers?'} subText={'With Athinia™’s ability to safeguard data, device makers are willing to share an unprecedented amount of information with suppliers, unlocking opportunities to improve performance, time to market, and customer satisfaction.'}  isImage={false}/>
+        <ImageAndText 
+          titleClass="text-sm-medium md:text-[2.5em] line-height-13" 
+          category={'Offering for Material Suppliers'} 
+          title={'Imagine all you could do with a real-time connection to your customers?'} 
+          subText={'With Athinia™’s ability to safeguard data, device makers are willing to share an unprecedented amount of information with suppliers, unlocking opportunities to improve performance, time to market, and customer satisfaction.'}  isImage={false}
+          sectionClass={"pb-[6.5rem] md:pb-[10rem] lg:pb-[16rem]"} 
+          boxClass="lg:pr-[13rem]"
+          subTextClass={"md:pr-3 lg:pr-0"}/>
 
         <TheBenifitsTwo
           firstBenefits={firstBenefits}
@@ -81,18 +88,18 @@ const Home = () => {
         />
         <section
           className="w-full flex-initial h-auto
-            break-words pt-0     md:pt-20"
+            break-words pt-0     md:pt-[6rem]"
         >
           <div
-            className="grid grid-cols-1 md:grid-cols-3
-            max-w-[1400px]
-            mx-auto md:px-8"
+            className="grid grid-cols-1
+            max-w-[1400px] 
+            mx-auto md:px-8 lg:px-2"
           >
-            <h3 className="text-athinia-green text-lg-medium px-10 pt-10 md:pl-0 lg:pl-0">
+            <h3 className="text-athinia-green font-weight-500 text-[2.5em] pl-8 pt-[3.8rem] pb-[2.5rem] md:pb-0 md:pt-0 lg:pt-10 md:pl-0 lg:pl-0">
               How It Works
             </h3>
           </div>
-        </section>
+        </section>        
         <Content2
           spacing="pt-0"
           allList={allUlList1}
@@ -100,10 +107,15 @@ const Home = () => {
           subTitle={"Consolidated view of all relevant data"}
           isTitleCol={true}
           iconColor={"fill-athinia-purple"}
-        />
-
+          extraClass={"lg:px-2 lg:letter-spacing--1"}
+          boxClass={"md:pl-0 md:pr-[1.2rem] lg:pr-[2rem] lg:mr-0 md:mt-3 lg:mt-0"}
+          titleClass={""}
+          subTitleClass={"letter-spacing-01 lg:letter-spacing-05"}
+          listClass={"ml-[3.2rem] md:ml-[3.1rem] lg:ml-[3rem] mt-4 lg:letter-spacing-01 mr-1 md:mr-0"}
+          animationClass={"md:mt-10 lg:mt-0"}
+        />        
         <Content1
-          spacing='pt-5'
+          spacing="pt-0"
           allList={allUlList2}
           title={"Analyze"}
           subTitle={
@@ -111,6 +123,11 @@ const Home = () => {
           }
           isTitleCol={true}
           iconColor={"fill-athinia-blue"}
+          boxClass={"md:px-0 lg:pl-0 pt-0 md:pr-0"}
+          listClass={"ml-[3rem] md:ml-[4.2rem] lg:ml-[4rem] mr-1 md:mr-2"}
+          titleClass={"mt-0 mb-5 px-1 lg:px-0 lg:my-5"}
+          subTitleClass={"px-1 lg:px-0"}
+          animationClass={"md:mt-[8rem] lg:mt-0"}
         />
         <Content2
           allList={allUlList3}
@@ -120,15 +137,25 @@ const Home = () => {
           }
           isTitleCol={true}
           iconColor={"fill-athinia-green"}
-        />
+          extraClass={"lg:px-2 lg:letter-spacing--1 mb-[4rem] md:mb-0"}
+          boxClass={"md:pl-0 md:pr-4 lg:mr-0"}
+          titleClass={"letter-spacing--1"}
+          subTitleClass={"letter-spacing-01 lg:letter-spacing-05"}
+          listClass={"ml-[3.2rem] md:ml-[3.1rem] lg:ml-[3rem] mt-4 lg:letter-spacing-01 mr-1 md:mr-0"}
+          animationClass={"md:mt-10 lg:mt-0"}
+        />        
         <BlueSection
-         contentPadding={'p-[2.2em] md:p-[0%]'}
           content={
             "Athinia™ can be the foundation for achieving best-in-class digitization capabilities. We provide a unified platform to aggregate your data and jumpstart your digital transformation, even if you are starting from a very fragmented place."
           }
+          wrapperPadding={'md:py-0'}
+          contentPadding={'p-[2.2em] py-[1.8rem] md:p-[8%] lg:p-[7%] md:mx-[1.8rem] lg:mx-0 md:letter-spacing--1 lg:letter-spacing-0'}
         />
         <DataSecurity />
-        <GetInContact />
+        <GetInContact 
+          subTitle="Athinia™ unlocks a new standard in data management for the semiconductor industry​."
+          extraClass="p-[12%_0%_8%_0%] pl-[2rem] pr-[2rem] md:pr-[3rem] md:px-0 md:pt-[12%] lg:pt-[8%]"
+        />
       </div>
       <Footer />
     </>

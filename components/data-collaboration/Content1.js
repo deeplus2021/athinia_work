@@ -10,8 +10,11 @@ const Content1 = ({
   icon = true,
   isTitleCol = false,
   spacing='pt-20',
-  boxClass="",
-  listClass=""
+  boxClass = "",
+  listClass = "",
+  titleClass = "",
+  subTitleClass = "",  
+  animationClass = ""
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -32,7 +35,7 @@ const Content1 = ({
             )}
           </div>
           <div className="hidden md:block">
-            <div className="h-[300px] md:h-[100px] lg:h-[300px] flex items-center relative  ">
+            <div className={`h-[300px] md:h-[100px] lg:h-[300px] flex items-center relative  ${animationClass}`}>
               {icon ? (               
                 <svg
 
@@ -56,13 +59,13 @@ const Content1 = ({
           </div>
         </div>
 
-        <div className={`col-span-2 px-[1.8rem] pt-5 md:pt-0 md:px-10 md:pr-3 lg:pr-0 ${boxClass ? boxClass : 'lg:pl-10'}`}>
+        <div className={`col-span-2 px-[1.8rem] pt-5 md:pt-0 lg:pr-0 ${boxClass ? boxClass : 'md:pr-3 md:px-10 lg:pl-10'}`}>
           {isTitleCol ? (
             <div className={`text-athinia-${textColor} my-5 lg:mb-1  p-0   md:p-3 `}>
-              <h3 className="text-sm-medium  my-5 lg:mb-3 md:text-lg-medium ">
+              <h3 className={`text-sm-medium lg:mb-3 md:text-lg-medium ${titleClass ? titleClass : 'my-5'}`}>
                 {title}
               </h3>
-              <h3 className="text-lg-small md:text-lg-small  text-athinia-green">
+              <h3 className={`text-lg-small md:text-lg-small  text-athinia-green ${subTitleClass ? subTitleClass : ''}`}>
                 {subTitle}
               </h3>
             </div>

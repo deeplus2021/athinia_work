@@ -2,12 +2,12 @@ import React from "react";
 import { useState } from "react";
 import PopupCard from "./PopupCard";
 
-const PopupParent = ({ title, subTitle, content, titleClass = 'k text-athinia-blue text-lg-small md:text-lg-medium text-sm-13' }) => {
+const PopupParent = ({ title, subTitle, content, titleClass = 'k text-athinia-blue text-lg-small md:text-lg-medium text-sm-13', spacingClass = '', colClass='' }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div     className="bg-white hover:cursor-pointer   hover:text-athinia-dark  px-5 py-3 md:p-[30px] grid grid-cols-9 md:grid-cols-6 mt-5">
-      <div onClick={() => setShowModal(true)} className="col-span-8 md:col-span-5">
+    <div     className={`bg-white hover:cursor-pointer   hover:text-athinia-dark  md:px-5 md:py-3 grid grid-cols-9 ${spacingClass ? spacingClass : 'md:grid-cols-6 mt-5 md:p-[30px]'}`}>
+      <div onClick={() => setShowModal(true)} className={`col-span-8 ${colClass ? colClass : 'md:col-span-5'}`}>
         <h1 className={`${titleClass} hover:text-athinia-dark md:letter-spacing--1 md:line-height-1`}>{title}</h1>
         <p className="text-athinia-blue md:text-lg-small text-08 font-sm-bold">{subTitle}</p>
       </div>
@@ -15,7 +15,7 @@ const PopupParent = ({ title, subTitle, content, titleClass = 'k text-athinia-bl
       <div onClick={() => setShowModal(true)} className="col-span-1 ">
         <div
        
-          className="fill-athinia-green h-4 w-4 ml-auto pt-2"
+          className={`fill-athinia-green h-4 w-4 ${colClass ? 'lg:pr-[1.7rem] pl-3 md:pl-0 md:ml-[1rem] lg:ml-auto' : 'ml-auto pt-2'}`}
         >
           <svg
             className="mini-drag"

@@ -10,9 +10,9 @@ export default function Footer() {
     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 max-w-[1400px] mx-auto">
 
         <div className="flex  md:col-span-1 lg:col-span-1  justify-center md:justify-start">
-        <a href="https://athinia.com/" className="flex items-center mb-4 sm:mb-0">
-            <img src="/images/Athinia-icon.svg" className="h-[60px] md:h-[60px] mx-1" alt="Athinia Logo" />
-            <span className="self-center text-2xl font-light whitespace-nowrap lg:ml-3">© Athinia 2022</span>
+        <a href="https://athinia.com/" className="flex items-center mb-[1.75rem] sm:mb-0">
+            <img src="/images/Athinia-icon.svg" className="h-[70px] md:h-[60px] mx-1" alt="Athinia Logo" />
+            <span className="self-center text-2xl font-light whitespace-nowrap ml-3">© Athinia 2022</span>
         </a>
         </div>
 

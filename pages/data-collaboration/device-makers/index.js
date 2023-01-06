@@ -64,7 +64,7 @@ const Home = () => {
     <>
       <Header />
 
-      <div className="flex min-h-screen flex-col items-center  mb-20">
+      <div className="flex min-h-screen flex-col items-center mb-[1.75rem] md:mb-[4.5rem] lg:mb-[9rem]">
         <Head>
           <title>
             Athinia &#x2022; Smart data collection & collaborative analytics
@@ -82,6 +82,8 @@ const Home = () => {
           subText="With Athinia™’s ability to safeguard data, you can feel confident in sharing information with material suppliers and creating a virtually and vertically integrated manufacturing flow. This unprecedented sharing of data can accelerate yield and overall performance."
           title="Imagine all you could do with a real-time connection to your customers?"
           category={"Offering for Device Makers"}
+          boxClass="lg:pr-[13rem]"
+          titleClass="md:letter-spacing--1 text-sm-medium md:text-lg-medium"
         />
 
         <TheBenifitsTwo
@@ -94,11 +96,11 @@ const Home = () => {
             break-words pt-0     md:pt-[6rem]"
         >
           <div
-            className="grid grid-cols-1 md:grid-cols-3
+            className="grid grid-cols-1
             max-w-[1400px] 
             mx-auto md:px-8 lg:px-2"
           >
-            <h3 className="text-athinia-green font-weight-500 text-[2.5em] pl-8 pt-10 md:pl-0 lg:pl-0">
+            <h3 className="text-athinia-green font-weight-500 text-[2.5em] pl-8 pt-[3.8rem] pb-[2.5rem] md:pb-0 md:pt-0 lg:pt-10 md:pl-0 lg:pl-0">
               How It Works
             </h3>
           </div>
@@ -111,9 +113,11 @@ const Home = () => {
           isTitleCol={true}
           iconColor={"fill-athinia-purple"}
           extraClass={"lg:px-2 lg:letter-spacing--1"}
-          boxClass={"lg:mr-0"}
-          subTitleClass={"letter-spacing-05"}
-          listClass={"lg:ml-[3rem] lg:mt-4 lg:letter-spacing-01"}
+          boxClass={"md:pl-0 md:pr-[1.2rem] lg:pr-[2rem] lg:mr-0 md:mt-3 lg:mt-0"}
+          titleClass={"letter-spacing--1"}
+          subTitleClass={"letter-spacing-01 lg:letter-spacing-05"}
+          listClass={"ml-[3.2rem] md:ml-[3.1rem] lg:ml-[3rem] mt-4 lg:letter-spacing-01 mr-1 md:mr-0"}
+          animationClass={"md:mt-10 lg:mt-0"}
         />
         <Content1
           spacing="pt-0"
@@ -124,8 +128,11 @@ const Home = () => {
           }
           isTitleCol={true}
           iconColor={"fill-athinia-blue"}
-          boxClass={"lg:pl-0"}
-          listClass={"lg:ml-[4rem]"}
+          boxClass={"md:px-0 lg:pl-0 pt-0 md:pr-0"}
+          listClass={"ml-[3rem] md:ml-[4.2rem] lg:ml-[4rem] mr-1 md:mr-2"}
+          titleClass={"mt-0 mb-5 px-1 lg:px-0 lg:my-5"}
+          subTitleClass={"px-1 lg:px-0"}
+          animationClass={"md:mt-[8rem] lg:mt-0"}
         />
         <Content2
           allList={allUlList3}
@@ -135,22 +142,25 @@ const Home = () => {
           }
           isTitleCol={true}
           iconColor={"fill-athinia-green"}
-          extraClass={"lg:px-2 lg:letter-spacing--1"}
-          boxClass={"lg:mr-0"}
-          subTitleClass={"letter-spacing-05"}
-          listClass={"lg:ml-[3rem] lg:mt-4 lg:letter-spacing-01"}
+          extraClass={"lg:px-2 lg:letter-spacing--1 mb-[4rem] md:mb-0"}
+          boxClass={"md:pl-0 md:pr-4 lg:mr-0"}
+          titleClass={"letter-spacing--1"}
+          subTitleClass={"letter-spacing-01 lg:letter-spacing-05"}
+          listClass={"ml-[3.2rem] md:ml-[3.1rem] lg:ml-[3rem] mt-4 lg:letter-spacing-01 mr-1 md:mr-0"}
+          animationClass={"md:mt-10 lg:mt-0"}
         />
         <BlueSection
           content={
             "Athinia™ enables device makers to create the next generation semiconductor data ecosystem enlisting the entire value chain."
           }
           wrapperPadding={'md:py-0'}
-          contentPadding={'p-[2.2em] md:p-[5%] lg:p-[7%]'}
+          contentPadding={'p-[2.2em] py-[1.8rem] md:p-[8%] lg:p-[7%] md:mx-[1.8rem] lg:mx-0 md:letter-spacing--1 lg:letter-spacing-0'}
         />
 
         <DataSecurity />
         <GetInContact 
           subTitle="Athinia™ unlocks a new standard in data management for the semiconductor industry​."
+          extraClass="p-[12%_0%_8%_0%] pl-[2rem] pr-[2rem] md:pr-[3rem] md:px-0 md:pt-[12%] lg:pt-[8%]"
           />
       </div>
       <Footer />
