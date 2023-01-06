@@ -9,9 +9,9 @@ const TwoCards = ({ titlePosition, title, cardData, sectionClass = "", boxClass 
           className="xl:text-[1.65em] lg:text-[1.7em] md:text-[1.65em] sm:text-[1.4em] text-[1.4em] md:font-medium sm:font-normal font-medium my-4 md:my-0 my-0 text-left md:tracking-[-1px] sm:tracking-[1px] text-blue">
           {item.cardTitle}
         </h3>
-        <p className={`md:text-[18px] lg:text-[100%] ${contentClass ? contentClass : 'my-6'}`}>{item.cardDescription}</p>
+        <p className={`md:text-[18px] lg:text-[100%] sm:tracking-[0] tracking-[0.1px] ${contentClass ? contentClass : 'my-6'}`}>{item.cardDescription}</p>
         <div className="my-5">
-          <Link className="text-athinia-blue sm:text-[16px] text-[0.8em]" style={{fontWeight: "500"}} href={item.cardlink}>
+          <Link className="text-athinia-blue sm:text-[16px] text-[14px] sm:font-medium font-normal" href={item.cardlink}>
             READ MORE
           </Link>
         </div>
@@ -22,7 +22,7 @@ const TwoCards = ({ titlePosition, title, cardData, sectionClass = "", boxClass 
   return (
     <section className={`w-full flex-initial h-auto break-words bg-athinia-gray ${sectionClass ? sectionClass :'sm:py-[8%] py-[8%]'}`}>
       <div className={`max-w-[1400px] mx-auto p-[1em] ${titleClass ? titleClass : 'md:p-[10px]'}`}>
-        <h1 style={{color: "#172337"}} className={`md:tracking-[-2px] sm:tracking-[0] text-sm-medium md:text-lg-large md:text-[3em] lg:text-lg-large my-4 md:my-0 tracking-[-1px] lg:mt-[20px] sm:text-[1.5em]
+        <h1 style={{color: "#172337"}} className={`md:tracking-[-2px] sm:tracking-[0] text-sm-medium md:text-lg-large md:text-[3em] lg:text-lg-large md:my-0 xl:mt-0 lg:mt-[20px] sm:text-[1.5em]
                                     ${
                                       titlePosition
                                         ? titlePosition

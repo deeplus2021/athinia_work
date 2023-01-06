@@ -26,7 +26,7 @@ const Home = () => {
 
 
     const {scrollYProgress} = useScroll({target: svgRef})
-    let yPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], width > 768 ? [800, 0, 0] : [0, 0, 0])
+    let yPosAnim = useTransform(scrollYProgress, [0, 1, 1], width > 768 ? [250, 0, 0] : [0, 0, 0])
 
 
     const cardData = [
@@ -127,7 +127,7 @@ const Home = () => {
                                 {/*<div className="lg:col-span-1"></div>*/}
                                 <div className="lg:col-span-1 md:pl-[10px]">
                                     {" "}
-                                    <div className="flex md:mx-0 md:mr-10  lg:mr-0 my-5 md:my-0">
+                                    <div className="flex md:mx-0 md:mr-10 lg:mr-0 my-3 md:my-0">
                                         <span>
                                             {" "}
                                             <FaLinkedin color="white" size={40} className={"md:h-[30px] md:w-[30px]"}/>
@@ -143,12 +143,12 @@ const Home = () => {
                         <div className="bg-athinia-dark sm:p-[5%] p-[5%]">
                             <div className="grid grid-cols-1 md:grid-cols-2 text-white">
                                 <div className="md:p-[10px]">
-                                    <h1 className="text-sm-medium md:text-lg-medium lg:pr-0 md:tracking-[-1px] sm:text-[2em] text-[1.5em]">
+                                    <h1 className="text-sm-medium md:text-lg-medium lg:pr-0 md:tracking-[-1px] sm:text-[2em] text-[1.5em] leading-[1.5em]">
                                         Press and Media Inquiries Contact:
                                     </h1>
                                     <p className="text-athinia-blue sm:my-[10px] my-[10px]" style={{fontWeight: 500}}>Nuria Aranda Bosch</p>
                                     <p className="md:mb-0 mb-[20px]">Marketing and Communications Manager</p>
-                                    <div className="flex my-2 md:my-2 mb-4">
+                                    <div className="flex my-2 md:my-2 mb-4 sm:pb-0 pb-[5px]">
                                         <span>
                                             <FiMail size={40} className={"md:h-[25px] md:w-[25px]"}/>
                                         </span>
