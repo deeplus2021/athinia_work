@@ -21,7 +21,7 @@ const TheBenifits = () => {
   return (
     <section
       className="w-full flex-initial h-auto
-              break-words  pt-10"
+              break-words  pt-10 lg:pt-[4.5rem] lg:pb-[5rem]"
     >
       <div class="flex items-center my-10">
         <span>
@@ -32,7 +32,7 @@ const TheBenifits = () => {
             y="0px"
             viewBox="0 0 73.2 20"
             fill="#7959B8"
-            className="w-[5em] relative block"
+            className="w-[5em] lg:w-[100px] relative block"
  
           >
             <g id="Layer_2_00000178897162455727381490000006693679397948052391_">
@@ -45,13 +45,13 @@ const TheBenifits = () => {
           </svg>
         </span>
         <h1
-          class="text-sm-medium md:text-lg-medium tracking-[-1px] 
+          class="text-sm-medium md:text-lg-medium lg:text-sm-medium tracking-[-1px] lg:tracking-[0px]
                               text-left text-athinia-purple px-3"
         >
-          <span>The Benefits </span>
+          <span>The Benefit </span>
         </h1>
       </div>
-      <div className="md:min-h-[100vh] max-w-[1400px] p-8  mx-auto items-center px-8 md:px-10 lg:px-0">
+      <div className="md:min-h-[100vh] max-w-[1400px] p-8  mx-auto items-center px-8 md:px-10 lg:px-[10px] lg:pt-0">
         <h3
           className="text-sm-medium md:text-lg-medium tracking-[-1px] 
                               text-left text-athinia-purple "
@@ -61,11 +61,11 @@ const TheBenifits = () => {
 
         <div
           className="grid grid-cols-5 gap-3 md:gap-0 lg:gap-3
-          max-w-screen-xl lg:px-8 md:py-20 lg:py-0  mx-auto items-center "
+          max-w-[1400px] lg:px-2 md:py-20 lg:py-0  mx-auto items-center "
         >
           <div
             className=" mt-10 md:mt-0 col-span-5 md:col-span-3 bg-before-after-mobile md:bg-before-after-image bg-contain bg-center bg-no-repeat 
-                              h-[300px] w-[300px] mr-5 md:mr-0 md:h-[450px] md:w-[450px]  xl:h-[700px] xl:w-[700px] lg:min-h-[550px]"
+                              h-[300px] w-[300px] mr-5 md:mr-0 md:h-[450px] md:w-[450px]  lg:h-[730px] lg:w-[810px] lg:min-h-[550px]"
           ></div>
 
           <div className="col-span-5 md:col-span-2 md:ml-10 lg:ml-0 px-0 xl:pl-20 lg:mb-20 relative">
@@ -73,8 +73,8 @@ const TheBenifits = () => {
               ref={textRef}
               style={{ y: width < 768 ? "" : yPosAnimText }}
             >
-              <div className="flex my-2">
-                <div className="">
+              <div className="flex my-2 lg:my-5 lg:mt-1">
+                <div className="lg:pt-1">
                   <FaCircle size={20} fill="#5F82FF" />
                 </div>
                 <div>
@@ -85,8 +85,8 @@ const TheBenifits = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex my-2">
-                <div className="">
+              <div className="flex my-2 lg:my-5">
+                <div className="lg:pt-1">
                   <FaCircle size={20} fill="#5F82FF" />
                 </div>
                 <div>
@@ -96,8 +96,8 @@ const TheBenifits = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex my-2">
-                <div className="">
+              <div className="flex my-2 lg:my-5">
+                <div className="lg:pt-1">
                   <FaCircle size={20} fill="#5F82FF" />
                 </div>
                 <div>

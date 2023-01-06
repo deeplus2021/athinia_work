@@ -16,7 +16,7 @@ const TheChallenge = () => {
               y="0px"
               viewBox="0 0 73.2 20"
               fill="#5F82FF"
-              className="w-[5em] relative block"
+              className="w-[5em] lg:w-[100px] relative block"
        
             >
               <g id="Layer_2_00000178897162455727381490000006693679397948052391_">
@@ -29,14 +29,14 @@ const TheChallenge = () => {
             </svg>
           </span>
           <h1
-            className="text-sm-medium md:text-lg-medium tracking-[-1px] 
+            className="text-sm-medium md:text-lg-medium lg:text-sm-medium tracking-[-1px] lg:tracking-[0px]
                               text-left text-athinia-blue px-3"
           >
             <span>The Challenge </span>
           </h1>
         </div>
 
-        <div className="grid grid-cols-1  max-w-[1400px] p-[32px]  mx-auto  ">
+        <div className="grid grid-cols-1  max-w-[1400px] p-[32px] lg:p-[10px_30px_10px_30px] mx-auto  ">
 
           <h3
             className="text-sm-medium md:text-lg-medium tracking-[-1px] 
@@ -54,7 +54,7 @@ const TheChallenge = () => {
             parameters that matter most.
           </p>
 
-          <div>
+          <div className="py-5">
             <Image
               src="/images/rapid-growth.png"
               width={1400}
@@ -64,12 +64,12 @@ const TheChallenge = () => {
             />
           </div>
           <div className=" mr-auto ml-auto">
-            <p className="text-white text-athinia-green font-bold">
+            <p className="text-white text-athinia-green font-bold lg:letter-spacing-03">
               Parameters not captured in CofA account for &#62;60% of
               variability in manufacturing *
             </p>
 
-            <p className="text-white text-left mb-[1em] text-[14px]">
+            <p className="text-white text-left mb-[1em] text-[15px] lg:mt-3">
               * Based on exemplary use case
             </p>
           </div>
@@ -80,11 +80,11 @@ const TheChallenge = () => {
                     break-words   md:min-h-[90vh] lg:min-h-auto"
       >
 
-        <div className="grid grid-cols-1 max-w-[1400px] p-8  mx-auto ">
+        <div className="grid grid-cols-1 max-w-[1400px] p-8 lg:px-[1.7rem] mx-auto ">
 
           <h3
             className="text-sm-medium md:text-lg-medium tracking-[-1px] 
-                                    text-left text-white mb-[40px]"
+                                    text-left text-white mb-[40px] lg:mb-[60px]"
           >
             Smart data reduces quality deviations and helps focus resources on
             parameters that matter most.
@@ -129,7 +129,7 @@ const TheChallenge = () => {
                 height={360}
                 alt="athinia-website"
               />
-              <p className="text-white my-2">
+              <p className="text-white my-2 lg:pr-[1.5rem]">
                 Data sharing allows all parameters to be correlated in one
                 multivariate analysis; relevant parameters are identified that
                 would have been ignored in traditional analysis.

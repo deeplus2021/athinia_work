@@ -17,7 +17,7 @@ const TheSolution = () => {
               y="0px"
               viewBox="0 0 73.2 20"
               fill="#67C3A6"
-              className="w-[5em] relative block"
+              className="w-[5em] lg:w-[100px] relative block"
        
             >
               <g id="Layer_2_00000178897162455727381490000006693679397948052391_">
@@ -30,7 +30,7 @@ const TheSolution = () => {
             </svg>
           </span>
           <h1
-            className="text-sm-medium md:text-lg-medium tracking-[-1px] 
+            className="text-sm-medium md:text-lg-medium lg:text-sm-medium tracking-[-1px] lg:tracking-[0px]
                                     text-left text-athinia-green px-3"
           >
             <span>The Solution </span>
@@ -38,7 +38,7 @@ const TheSolution = () => {
         </div>
         <div
           className="md:min-h-[100vh] max-w-[1400px]
-                    mx-auto items-center px-8 md:px-[2em] xl:px-0"
+                    mx-auto items-center px-8 md:px-[2em] lg:px-[10px]"
         >
           <h3
             className="text-sm-medium md:text-lg-medium tracking-[-1px] 
@@ -49,12 +49,12 @@ const TheSolution = () => {
           </h3>
           <h3
             className="text-sm-medium md:text-lg-medium tracking-[-1px] 
-                                    text-left md:mb-[0px] lg:mb-[20px]"
+                                    text-left md:mb-[0px]"
           >
             It starts with the three A's​:
           </h3>
 
-          <div className="hidden md:grid grid grid-cols-2 gap-x-12 relative lg:mx-20   h-[200px] md:px-[100px] lg:px-[150px] ">
+          <div className="hidden md:grid grid grid-cols-2 gap-x-12 relative lg:mx-20   h-[170px] md:px-[100px] lg:px-[150px] lg:mt-[-30px]">
             <div className="block mr-auto lg:pt-0   ml-auto md:px-[65px] lg:px-[50px] xl:px-[140px] border-b-[6px] border-athinia-green z-0 flex items-center">
               <div
 
@@ -88,7 +88,7 @@ const TheSolution = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center md:mt-[-35px] lg:mt-[-65px] ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center md:mt-[-35px] lg:mt-[-65px] lg:px-3">
             <div  className="text-center z-[5] h-auto md:h-[350px] lg:h-[400px]">
               <Image
                 className="ml-auto mr-auto w-[95px] h-[95px] md:w-[70px] md:h-[70px] lg:w-[130px] lg:h-[130px] z-50"
@@ -99,7 +99,7 @@ const TheSolution = () => {
               />
               <h3
                 className="text-sm-medium md:text-lg-medium tracking-[-1px] 
-                                     text-athinia-green my-5 md:my-0"
+                                     text-athinia-green my-5 md:my-0 lg:mt-3"
               >
                 Aggregate
               </h3>
@@ -121,7 +121,7 @@ const TheSolution = () => {
               <div className="z-50">
                 <h3
                   className="text-sm-medium md:text-lg-medium tracking-[-1px] 
-                                     text-athinia-green my-5 md:my-0"
+                                     text-athinia-green my-5 md:my-0 lg:mt-3"
                 >
                   Ana<span className="text-athinia-blue">lyze</span>
                 </h3>
@@ -142,7 +142,7 @@ const TheSolution = () => {
               />
               <h3
                 className="text-sm-medium md:text-lg-medium tracking-[-1px] 
-                                     text-athinia-blue  my-5 md:my-0"
+                                     text-athinia-blue  my-5 md:my-0 lg:mt-3"
               >
                 Act
               </h3>
@@ -151,7 +151,7 @@ const TheSolution = () => {
               </p>
             </div>
           </div>
-          <div className="py-10 my-20">
+          <div className="py-10 my-20 lg:mt-5">
             <h3
               className="text-sm-medium md:text-lg-medium tracking-[-1px] 
                                     text-left text-athinia-green mb-[20px]"
@@ -164,7 +164,7 @@ const TheSolution = () => {
               width={1400}
               height={800}
               alt="data-exchange"
-              className="h-[150px] w-[500px] mr-auto ml-auto md:h-[300px] md:w-[600px] lg:h-[500px] lg:w-[1300px]  "
+              className="h-[150px] w-[500px] mr-auto ml-auto md:h-[300px] md:w-[600px] lg:h-[515px] lg:w-[1380px]  "
             />
           </div>
         </div>
