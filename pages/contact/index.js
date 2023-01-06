@@ -11,18 +11,31 @@ import {
 import {FiMail} from "react-icons/fi";
 import TwoCards from "../../components/Sections/TwoCards";
 import {motion, useScroll, useTransform} from "framer-motion";
-import {useRef} from "react";
+import {useRef, useState, useEffect} from "react";
 
 
 const Home = () => {
     const svgRef = useRef(null);
+    const [width, setWidth] = useState(0)
+    useEffect(() => {
+        if (window != undefined) {
+            // browser code
+            setWidth(window.innerWidth)
+        }
+    })
+
 
     const {scrollYProgress} = useScroll({target: svgRef});
-    const yPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], [800, 0, 0]);
+    console.log(width)
+    let yPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], [800, 0, 0]);
+    if(width < 768) {
+        yPosAnim = useTransform(scrollYProgress, [0, 0.4, 1], [0, 0, 0]);
+    }
+
 
     const cardData = [
         {
-            category: "PRESS RELEASES",
+            category: "PRESS RELEASE",
             cardTitle: "Micron to Select Athinia™ for Pioneering Data Collaboration",
             cardDescription:
                 "Today, Athinia™ announced that Micron Tehcnology, Inc. (Nasdaq: MU), a global leader in innovative memory and storage solutions, plans to use the Athinia™ data analytics platform to create a pioneering data collaboration ecosystem that will help lead a continued journey of digital transformation with Micron’s critical suppliers.",
@@ -30,7 +43,7 @@ const Home = () => {
         },
 
         {
-            category: "PRESS RELEASES",
+            category: "PRESS RELEASE",
             cardTitle:
                 "Athinia to Accelerate the Use of AI and Big Data to Solve Critical Semiconductor Challenges",
             cardDescription:
@@ -56,9 +69,9 @@ const Home = () => {
                     <link rel="icon" href="/cropped-Athinia-favicon-150x150.png"/>
                 </Head>
 
-                <section className="w-full flex-initial h-auto break-words 2xl:pt-[5%] xl:pt-[4.8%] lg:pt-[3%] md:pt-[4.5%] sm:pt-[1%] pt-[2em]">
-                    <div style={{padding: "10px", maxWidth: "1400px", marginRight: "auto", marginLeft: "auto"}}>
-                        <h2 className="md:text-lg-large my-4 md:my-0 tracking-[-1px] text-left sm:text-[3em] md:mx-0 md:px-0 sm:mx-5 px-[0.7em] text-[2em]">
+                <section className="w-full flex-initial h-auto break-words pt-[5%]">
+                    <div className="p-[2em] md:p-[10px]" style={{maxWidth: "1400px", marginRight: "auto", marginLeft: "auto"}}>
+                        <h2 className="md:text-lg-large sm:my-0 text-left sm:text-[3em] mx-0 px-0 text-[2em] font-medium mb-[20px] sm:tracking-[-2px] tracking-[0]" style={{color: "#172337"}}>
                             Get in Contact
                         </h2>
                         <div className="relative overflow-hidden">
@@ -74,9 +87,9 @@ const Home = () => {
                                     className="lg:w-[100px] md:w-[125px] md:my-5 md:px-0 lg:mb-2 sm:my-0 my-0"/>
                             </motion.small>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2" style={{padding: "10px"}}>
+                        <div className="grid grid-cols-1 md:grid-cols-2 md:p-[10px]">
                             <div>
-                                <p className="md:pr-5 lg:px-0 lg:mb-0 sm:mb-[48px] sm:pl-4 px-4 mb-[48px]">
+                                <p className="md:pr-5 md:pl-0 lg:px-0 lg:mb-0 sm:mb-[48px] pl-0 sm:mb-[48px] sm:mt-0 mt-[10px] mb-[1em]">
                                     Interested in exploring the possibilities Athinia™ can unlock
                                     for your organization? We would love to hear from you.
                                 </p>
@@ -84,7 +97,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="lg:m-[4%_0_5%_0] sm:mb-[5%] mb-[5%]" style={{maxWidth: "1400px", marginRight: "auto", marginLeft: "auto"}}>
+                    <div className="lg:m-[4%_0_5%_0] sm:mb-[5%] mb-[5%] sm:mt-0 mt-[3%]" style={{maxWidth: "1400px", marginRight: "auto", marginLeft: "auto"}}>
                         <div className="bg-athinia-blue lg:p-[5%_20%_5%_20%] sm:p-[2em] p-[2em]">
                             <div className="flex">
                                 <Image
@@ -95,7 +108,7 @@ const Home = () => {
                                     className="sm:h-[125px] sm:w-[125px] h-[97px] w-[97px] rounded-full"
                                 />
                                 <div className="sm:ml-[20px] ml-[20px]">
-                                    <h3 className="text-sm-medium sm:text-lg-medium">
+                                    <h3 className="text-sm-medium sm:text-lg-medium sm:tracking-[-1px]" style={{color: "#172337"}}>
                                         Russell Kempt
                                     </h3>
                                     <h3 className="text-white text-[22px] md:text-[28px]">
@@ -106,7 +119,7 @@ const Home = () => {
                             <div className="md:grid grid-cols-2 md:mt-[20px] md:p-[10px] sm:block block">
                                 <div className="lg:col-span-1">
                                     {" "}
-                                    <div className="flex md:mr-10 lg:mr-0 my-5 md:my-0">
+                                    <div className="flex md:mr-10 lg:mr-0 sm:my-5 my-7 md:my-0 ">
                                         <span>
                                             {" "}
                                             <FiMail color="white" size={40} className={"md:h-[30px] md:w-[30px]"}/>
@@ -116,7 +129,7 @@ const Home = () => {
                                     </div>
                                 </div>
                                 {/*<div className="lg:col-span-1"></div>*/}
-                                <div className="lg:col-span-1">
+                                <div className="lg:col-span-1 md:pl-[10px]">
                                     {" "}
                                     <div className="flex md:mx-0 md:mr-10  lg:mr-0 my-5 md:my-0">
                                         <span>
@@ -134,21 +147,21 @@ const Home = () => {
                         <div className="bg-athinia-dark sm:p-[5%] p-[5%]">
                             <div className="grid grid-cols-1 md:grid-cols-2 text-white">
                                 <div className="md:p-[10px]">
-                                    <h1 className="text-sm-medium md:text-lg-medium lg:pr-0 md:tracking-[-1px] text-[1.5em]">
+                                    <h1 className="text-sm-medium md:text-lg-medium lg:pr-0 md:tracking-[-1px] sm:text-[2em] text-[1.5em]">
                                         Press and Media Inquiries Contact:
                                     </h1>
-                                    <p className="text-athinia-blue sm:my-[10px] my-[10px]">Nuria Aranda Bosch</p>
-                                    <p>Marketing and Communications Manager</p>
-                                    <div className="flex my-2">
+                                    <p className="text-athinia-blue sm:my-[10px] my-[10px]" style={{fontWeight: 500}}>Nuria Aranda Bosch</p>
+                                    <p className="md:mb-0 mb-[20px]">Marketing and Communications Manager</p>
+                                    <div className="flex my-2 md:my-2 mb-4">
                                         <span>
                                             <FiMail size={40} className={"md:h-[25px] md:w-[25px]"}/>
                                         </span>
-                                        <a className="mx-2" href="mailto:nuria.aranda-bosch@athinia.com">
+                                        <a className="mx-2 md:mx-2 ml-[1em]" href="mailto:nuria.aranda-bosch@athinia.com">
                                             nuria.aranda-bosch@athinia.com
                                         </a>
                                     </div>
                                 </div>
-                                <div className="lg:p-[10px]">
+                                <div className="lg:p-[10px] md:p-[10px_0_0_10px]">
                                     <div className="flex mb-5 hover:text-athinia-green">
                                         <span>
                                             <FaThumbtack
@@ -157,7 +170,7 @@ const Home = () => {
                                             />
                                         </span>
                                         <a
-                                            className="mx-4"
+                                            className="mx-4 md:self-auto self-center"
                                             target="_blank"
                                             href="https://www.google.com/maps/place/245+First+St,+Cambridge,+MA+02142/@42.363518,-71.0812198,17z/"
                                         >
@@ -172,14 +185,14 @@ const Home = () => {
                                             />
                                         </span>
                                         <a
-                                            className="mx-4"
+                                            className="mx-4 md:self-auto self-center"
                                             target="_blank"
                                             href="https://www.linkedin.com/company/athinia"
                                         >
                                             @athinia
                                         </a>
                                     </div>
-                                    <div className=" flex my-5 hover:text-athinia-green">
+                                    <div className="flex my-5 hover:text-athinia-green md:mb-5 mb-0">
                                         <span>
                                             <FaTwitter
                                                 size={40}
@@ -187,7 +200,7 @@ const Home = () => {
                                             />
                                         </span>
                                         <a
-                                            className="mx-4"
+                                            className="mx-4 md:self-auto self-center"
                                             target="_blank"
                                             href="https://twitter.com/Data4Pioneers"
                                         >
