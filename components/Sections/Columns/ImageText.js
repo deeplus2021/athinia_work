@@ -25,19 +25,19 @@ const ImageText = () => {
     >
       <div
         className="grid grid-cols-1 md:grid-cols-2
-              min-h-[50vh] md:min-h-[90vh] lg:min-h-[100vh] max-w-[1400px] p-[2em] md:py-[2em] md:px-[0em] lg:p-[0_2em_4.5em_1em]
+              min-h-[50vh] md:min-h-[90vh] lg:min-h-[100vh] max-w-[1400px] px-[2em] pt-[2.3em] pb-[6.5em] md:py-[2em] md:px-[2em] lg:px-[0em] lg:p-[0_2em_4.5em_1em]
               mx-auto items-center "
       >
         <div
           className="bg-ecosystem-image bg-contain bg-center bg-no-repeat 
-                              h-[300px] w-100 md:h-[400px] xl:h-[600px] xl:w-[670px] xl:min-h-[800px] lg:min-h-[550px]"
+                              h-[350px] w-100 md:h-[400px] xl:h-[600px] xl:w-[670px] xl:min-h-[800px] lg:min-h-[550px]"
 
         ></div>
 
-        <div className=" pt-5 md:pt-0 md:px-0 relative md:mb-20 lg:ml-4">
+        <div className=" pt-[2rem] md:pt-0 md:px-0 relative md:mb-20 lg:ml-4">
           <motion.div ref={textRef} style={{y: width < 768 ? '' : yPosAnimText}}>
           <h3
-            className="text-sm-medium md:text-[38px] lg:text-lg-medium tracking-[-1px] 
+            className="text-sm-medium md:text-[38px] lg:text-lg-medium md:tracking-[-1px] 
                               text-left text-white mb-[20px]"
           >
             Building a data ecosystem to help the semiconductor industry focus

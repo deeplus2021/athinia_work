@@ -48,8 +48,17 @@ const Home = () => {
         <TheSolution />
         <TheSecurity />
         <TheBenifits />
-        <TwoCards title={'Case Studies'} cardData={cardData}/>
-        <GetInContact/>
+        <TwoCards 
+          title={'Case Studies'} 
+          cardData={cardData}
+          sectionClass='sm:py-[8%] md:py-[13%] md:px-[2em] lg:px-0 lg:py-[9%]'
+          titleClass='md:p-[10px_3px_10px_3px]'
+          contentClass="my-6 md:mt-4 lg:mb-6"
+          />
+        <GetInContact
+          extraClass="p-[12%_0%_16%_0%] pl-[2rem] pr-[2rem] md:pr-[3rem] md:px-0 md:pt-[12%] lg:pt-[8%]"
+          isException={true}
+        />
       </div>
       <Footer />
     </>

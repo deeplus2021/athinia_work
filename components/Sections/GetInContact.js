@@ -8,7 +8,8 @@ import { useRef } from "react";
 
 const GetInContact = ({
   subTitle = "",
-  extraClass = ""
+  extraClass = "",
+  isException = false
 }) => {
   const svgRefGreen = useRef(null);
   const svgRefPurple = useRef(null);
@@ -73,20 +74,20 @@ const GetInContact = ({
   const xPosAnimBlueTwo = useTransform(
     scrollYProgressBlueTwo,
     [1, 0.5],
-    width > 1024 ? [100, 0] : [100, -90]
+    width > 1024 ? [100, 0] : (isException ? [100, -100] : [100, -90])
   );
 
   // Purple
   const yPosAnimBluePurple = useTransform(
     scrollYProgressPurple,
     width > 1024 ? [1, 0.5] : [1, 0],
-    width > 1024 ? [-150, 0] : [-200, 80]
+    width > 1024 ? [-150, 0] : (isException ? [-200, 100] : [-200, 80])
   );
 
   const xPosAnimBluePurple = useTransform(
     scrollYProgressPurple,
     [1, 0.5],
-    width > 1024 ? [-200, 0] : [-200, -8]
+    width > 1024 ? [-200, 0] : (isException ? [-200, 0] : [-200, -8])
   );
 
   return (

@@ -21,7 +21,7 @@ const TheBenifits = () => {
   return (
     <section
       className="w-full flex-initial h-auto
-              break-words  pt-10 lg:pt-[4.5rem] lg:pb-[5rem]"
+              break-words  pt-10 md:pt-[1.5rem] lg:pt-[4.5rem] lg:pb-[5rem]"
     >
       <div class="flex items-center my-10">
         <span>
@@ -32,7 +32,7 @@ const TheBenifits = () => {
             y="0px"
             viewBox="0 0 73.2 20"
             fill="#7959B8"
-            className="w-[5em] lg:w-[100px] relative block"
+            className="w-[100px] relative block"
  
           >
             <g id="Layer_2_00000178897162455727381490000006693679397948052391_">
@@ -45,13 +45,13 @@ const TheBenifits = () => {
           </svg>
         </span>
         <h1
-          class="text-sm-medium md:text-lg-medium lg:text-sm-medium tracking-[-1px] lg:tracking-[0px]
+          class="text-sm-medium
                               text-left text-athinia-purple px-3"
         >
           <span>The Benefit </span>
         </h1>
       </div>
-      <div className="md:min-h-[100vh] max-w-[1400px] p-8  mx-auto items-center px-8 md:px-10 lg:px-[10px] lg:pt-0">
+      <div className="lg:min-h-[100vh] max-w-[1400px] p-8 mx-auto items-center px-8 md:pt-5 lg:pt-8 lg:px-[10px] lg:pt-0">
         <h3
           className="text-sm-medium md:text-lg-medium tracking-[-1px] 
                               text-left text-athinia-purple "
@@ -61,7 +61,7 @@ const TheBenifits = () => {
 
         <div
           className="grid grid-cols-5 gap-3 md:gap-0 lg:gap-3
-          max-w-[1400px] lg:px-2 md:py-20 lg:py-0  mx-auto items-center "
+          max-w-[1400px] lg:px-2 md:py-0  mx-auto items-center "
         >
           <div
             className=" mt-10 md:mt-0 col-span-5 md:col-span-3 bg-before-after-mobile md:bg-before-after-image bg-contain bg-center bg-no-repeat 
@@ -71,9 +71,9 @@ const TheBenifits = () => {
           <div className="col-span-5 md:col-span-2 md:ml-10 lg:ml-0 px-0 xl:pl-20 lg:mb-20 relative">
             <motion.div
               ref={textRef}
-              style={{ y: width < 768 ? "" : yPosAnimText }}
+              style={{ y: width < 1024 ? "" : yPosAnimText }}
             >
-              <div className="flex my-2 lg:my-5 lg:mt-1">
+              <div className="flex my-2 md:my-5 md:mt-8 lg:mt-1">
                 <div className="lg:pt-1">
                   <FaCircle size={20} fill="#5F82FF" />
                 </div>
@@ -85,7 +85,7 @@ const TheBenifits = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex my-2 lg:my-5">
+              <div className="flex my-2 md:my-5">
                 <div className="lg:pt-1">
                   <FaCircle size={20} fill="#5F82FF" />
                 </div>
@@ -96,7 +96,7 @@ const TheBenifits = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex my-2 lg:my-5">
+              <div className="flex my-2 md:my-5">
                 <div className="lg:pt-1">
                   <FaCircle size={20} fill="#5F82FF" />
                 </div>
@@ -112,7 +112,7 @@ const TheBenifits = () => {
           </div>
         </div>
 
-        <div class="mt-5 md:mt-0 lg:mx-5 lg:px-5 xl:mx-0  grid grid-cols-1 md:grid-cols-2 gap-20">
+        <div class="mt-5 md:mt-0 lg:mx-5 lg:px-4 xl:mx-0  grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-16 lg:gap-10 md:mb-5 lg:mb-0">
           <div>
             <h3
               className="text-sm-medium md:text-lg-medium tracking-[-1px] 
@@ -120,39 +120,39 @@ const TheBenifits = () => {
             >
               For Device Makers
             </h3>
-            <p>
+            <p className="lg:mt-2">
               Share and analyze the data that matters with your suppliers to
               help improve yield, efficiency and performance
             </p>
             <CustomButton
               isInternal={true}
-              extraClass={"text-white md:text-[1.2em] lg:text-[100%]"}
+              extraClass={"text-white md:text-[1.1em] lg:text-[100%]"}
               background={"bg-athinia-purple"}
-              paddingX={"px-5"}
-              paddingY={"py-3"}
-              wrapperClass={"my-5 text-center lg:text-left"}
+              paddingX={"px-5 lg:px-[1.2rem]"}
+              paddingY={"py-3 lg:py-[0.85rem]"}
+              wrapperClass={"my-5 text-center lg:text-left lg:tracking-[1px]"}
               link={"/data-collaboration/device-makers/"}
               text={"EXPLORE BENEFITS FOR DEVICE MAKERS"}
             />
           </div>
 
-          <div>
+          <div className="md:mr-3 lg:mr-0">
             <h3
               className="text-sm-medium md:text-lg-medium tracking-[-1px] 
                               text-left text-athinia-purple "
             >
               For Material Suppliers
             </h3>
-            <p>
+            <p className="lg:mt-2">
               Focus on the parameters that matter most to material performance
               and put your effort where it really counts
             </p>
             <CustomButton
               isInternal={true}
-              extraClass={"text-white md:text-[1.2em] lg:text-[100%]"}
+              extraClass={"text-white md:text-[1.1em] lg:text-[100%]"}
               background={"bg-athinia-purple"}
-              paddingX={"px-5"}
-              paddingY={"py-3"}
+              paddingX={"px-5 lg:px-[1.2rem]"}
+              paddingY={"py-3 lg:py-[0.85rem]"}
               wrapperClass={"my-5 text-center lg:text-left"}
               link={"/data-collaboration/device-makers/"}
               text={" EXPLORE BENEFITS FOR MATERIAL SUPPLIERS"}
