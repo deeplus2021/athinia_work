@@ -26,7 +26,7 @@ const Home = () => {
 
 
     const {scrollYProgress} = useScroll({target: svgRef})
-    let yPosAnim = useTransform(scrollYProgress, [0, 1, 1], width > 768 ? [250, 0, 0] : [0, 0, 0])
+    let yPosAnim = useTransform(scrollYProgress, [0, 1, 1], width > 768 ? [width*0.12, 0, 0] : [0, 0, 0])
 
 
     const cardData = [
