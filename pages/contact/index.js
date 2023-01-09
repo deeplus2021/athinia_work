@@ -70,7 +70,7 @@ const Home = () => {
                         <h2 className="md:text-lg-large sm:my-0 text-left sm:text-[3em] mx-0 px-0 text-[2em] font-medium mb-[20px] sm:tracking-[-2px] tracking-[0]" style={{color: "#172337"}}>
                             Get in Contact
                         </h2>
-                        <div className="relative overflow-hidden">
+                        <div className="relative overflow-hidden animate-fade-in-left">
                             <motion.small
                                 className="block"
                                 style={{x:yPosAnim}}
