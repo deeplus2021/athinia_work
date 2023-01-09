@@ -12,12 +12,26 @@ const Home = () => {
             <div className="flex min-h-screen flex-col items-center lg:justify-center">
                 <Head>
                     <title>
-                        Athinia &#x2022; Smart data collection & collaborative analytics
+                        Careers &#x2022; Athinia
                     </title>
                     <meta
                         name="description"
-                        content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
+                        content="Are you ready to lead the semiconductor industry revolution? We are looking for champions who are ready to unlock the power of data to build the future of semiconductors."
                     />
+                    <meta property="og:locale" content="en_US" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:title" content="Careers • Athinia" />
+                    <meta property="og:description" content="Are you ready to lead the semiconductor industry revolution? We are looking for champions who are ready to unlock the power of data to build the future of semiconductors." />
+                    <meta property="og:url" content="https://athinia.com/about/careers/" />
+                    <meta property="og:site_name" content="Athinia" />
+                    <meta property="article:modified_time" content="2022-11-03T15:49:06+00:00" />
+                    <meta property="og:image" content="https://athinia.com/wp-content/uploads/2021/10/Athinia-social-thumb.jpg" />
+                    <meta property="og:image:width" content="800" />
+                    <meta property="og:image:height" content="533" />
+                    <meta property="og:image:type" content="image/jpeg" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:label1" content="Est. reading time" />
+                    <meta name="twitter:data1" content="3 minutes" />
                     <link rel="icon" href="/cropped-Athinia-favicon-150x150.png"/>
                 </Head>
 

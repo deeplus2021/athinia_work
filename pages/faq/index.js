@@ -13,6 +13,24 @@ const Home = () => {
         <Head>
         <title>Frequently Asked Questions • Athinia</title>
         <meta http-equiv="Content-Security-Policy" ></meta>
+        <meta
+            name="description"
+            content="Frequently Asked Questions About Athinia™"
+          />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content="Frequently Asked Questions • Athinia" />
+          <meta property="og:description" content="Frequently Asked Questions About Athinia™" />
+          <meta property="og:url" content="https://athinia.com/about/faq/" />
+          <meta property="og:site_name" content="Athinia" />
+          <meta property="article:modified_time" content="2022-11-03T15:49:06+00:00" />
+          <meta property="og:image" content="https://athinia.com/wp-content/uploads/2021/10/Athinia-social-thumb.jpg" />
+          <meta property="og:image:width" content="800" />
+          <meta property="og:image:height" content="533" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:label1" content="Est. reading time" />
+          <meta name="twitter:data1" content="3 minutes" />
           <link rel="icon" href="/cropped-Athinia-favicon-150x150.png" />
         </Head>
   
@@ -32,7 +50,7 @@ const Home = () => {
           </div>
 
           <div className="">
-           {data.map(item => <PopupParent titleClass='text-athinia-blue text-lg-small md:text-sm-medium md:letter-spacing--04 lg:letter-spacing-0 line-height-12 md:line-height-14' spacingClass='md:grid-cols-12 mt-4 p-[20px_20px_10px_20px] md:p-[30px_30px_20px_30px] lg:p-[30px]' colClass='md:col-span-11' title={item.title} content={item.content}/>)}
+           {data.map(item => <PopupParent titleClass='text-athinia-blue text-lg-small md:text-sm-medium md:letter-spacing--04 lg:letter-spacing-0 line-height-12 md:line-height-14' spacingClass='md:grid-cols-12 mt-4 p-[20px_20px_10px_20px] md:p-[30px_30px_20px_30px] lg:p-[25px_30px_25px_30px]' colClass='md:col-span-11' title={item.title} content={item.content}/>)}
           </div>
         </div>
       </section>

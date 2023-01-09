@@ -67,12 +67,26 @@ const Home = () => {
       <div className="flex min-h-screen flex-col items-center mb-[1.75rem] md:mb-[4.5rem] lg:mb-[9rem]">
         <Head>
           <title>
-            Athinia &#x2022; Smart data collection & collaborative analytics
+            Offering for Device Makers &#x2022; Athinia
           </title>
           <meta
             name="description"
-            content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
+            content="With Athinia™’s ability to safeguard data, you can feel confident in sharing information with material suppliers and creating a virtually and vertically integrated manufacturing flow. This unprecedented sharing of data can accelerate yield and overall performance."
           />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content="Offering for Device Makers • Athinia" />
+          <meta property="og:description" content="With Athinia™’s ability to safeguard data, you can feel confident in sharing information with material suppliers and creating a virtually and vertically integrated manufacturing flow. This unprecedented sharing of data can accelerate yield and overall performance." />
+          <meta property="og:url" content="https://athinia.com/data-collaboration/device-makers" />
+          <meta property="og:site_name" content="Athinia" />
+          <meta property="article:modified_time" content="2022-11-03T15:49:06+00:00" />
+          <meta property="og:image" content="https://athinia.com/wp-content/uploads/2021/10/Athinia-social-thumb.jpg" />
+          <meta property="og:image:width" content="800" />
+          <meta property="og:image:height" content="533" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:label1" content="Est. reading time" />
+          <meta name="twitter:data1" content="3 minutes" />
           <link rel="icon" href="/cropped-Athinia-favicon-150x150.png" />
         </Head>
 

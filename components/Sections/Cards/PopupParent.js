@@ -15,7 +15,7 @@ const PopupParent = ({ title, subTitle, content, titleClass = 'k text-athinia-bl
       <div onClick={() => setShowModal(true)} className="col-span-1 ">
         <div
        
-          className={`fill-athinia-green h-4 w-4 ${colClass ? 'lg:pr-[1.7rem] pl-3 md:pl-0 md:ml-[1rem] lg:ml-auto' : 'ml-auto pt-2'}`}
+          className={`fill-athinia-green h-4 w-4 ${colClass ? 'lg:pr-[1.7rem] pl-3 md:pl-0 md:ml-[1rem] lg:ml-auto lg:mt-1' : 'ml-auto pt-2'}`}
         >
           <svg
             className="mini-drag"

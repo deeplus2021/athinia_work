@@ -30,7 +30,7 @@ const TheChallenge = () => {
           </span>
           <h1
             className="text-sm-medium
-                              text-left text-athinia-blue px-3"
+                              text-left text-athinia-blue px-4 md:px-3"
           >
             <span>The Challenge </span>
           </h1>
@@ -117,7 +117,7 @@ const TheChallenge = () => {
                 analytical tools.
               </h4>
             </div>
-            <div className="pt-5 md:pr-5 lg:pr-0">
+            <div className="pt-5 md:pt-0 md:pr-5 lg:pr-0">
               <h4 className="text-athinia-green text-sm-medium md:sm-medium">
                 Future state:
               </h4>

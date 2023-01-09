@@ -11,12 +11,12 @@ const KeyApplications = () => {
     <>
       <section
         className="w-screen flex-initial h-auto
-            break-words bg-athinia-dark px-5 md:px-20 p-[2%_0%_8%_0%]"
+            break-words bg-athinia-dark px-5 md:px-0 p-[9%_0%_15%_0%] md:p-[2%_0%_12.5%_0%] lg:p-[1.5%_0%_10%_0%]"
       >
-        <div className="text-center text-white pb-10">
+        <div className="text-center text-white pb-4 md:pb-5 lg:pb-10">
           <h1
-            className="text-sm-large md:text-lg-large tracking-[-1px] 
-                                     mt-20 pt-5"
+            className="text-sm-large md:text-lg-large md:text-[3em] lg:text-[4em] md:tracking-[-1px] 
+                                     md:mt-[2.5rem] lg:mt-20 pt-5 lg:pt-0"
           >
             Leadership Team
           </h1>
@@ -24,10 +24,10 @@ const KeyApplications = () => {
         {/* md:min-h-[100vh] lg:min-h-[65vh] */}
         <div
           className="grid grid-cols-1
-                  max-w-screen-xl px-8  
+                  max-w-[1400px] px-[1.5rem] md:px-8
                  mx-auto items-center text-center relative"
         >
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-center gap-x-10 md:gap-y-10 lg:gap-y-0">
+          <div className="grid grid-cols-2 md:grid-cols-5 text-center gap-x-5 md:gap-x-0 lg:gap-x-10 md:gap-y-10 lg:gap-y-0">
             <Profile
               name={"Laura Matz"}
               content={lauraDetail}
@@ -48,6 +48,7 @@ const KeyApplications = () => {
               title={"Executive Vice President"}
               link={"https://www.facebook.com/"}
               image={"ryan-taylor.jpg"}
+              btnClass={'mt-4 md:mt-0'}
             />
             <Profile
               name={"Jeremy Elser"}
@@ -56,6 +57,7 @@ const KeyApplications = () => {
               title2={'Product & Implementation'}
               link={"https://www.facebook.com/"}
               image={"Jeremy-Elser.jpg"}
+              btnClass={'mt-4 md:mt-0'}
             />
             <Profile
               name={"Chris Han-Adebekun"}
@@ -64,6 +66,7 @@ const KeyApplications = () => {
               title2={'Business Development'}
               link={"https://www.facebook.com/"}
               image={"CDP_3355_1-1.jpg"}
+              btnClass={'mt-8 md:mt-0'}
             />
           </div>
         </div>

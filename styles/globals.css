@@ -87,6 +87,9 @@
     .text-blue {
       color: #172337;
     }
+    .fill-athinia-dark-purple {
+      color: #503191;
+    }
 
     @media (max-width: 1024px) {
       .font-size-12em {

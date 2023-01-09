@@ -18,10 +18,19 @@ const LearnMore = ({
   rightBlue = 'right-[-5%]',
   colOneOrderSM,
   colTwoOrderSM,
+  boxClass = '',
+  leftPadding = '',
+  aboutPage = false,
+  sectionClass = '',
+  heightClass = '',
+  contentCenter = true
 }) => {
   const svgRefGreen = useRef(null);
   const svgRefBlue = useRef(null);
   const picRef = useRef(null);
+
+  const { width } = useWindowDimensions();
+  const isMobile = width < 768;
 
   const { scrollYProgress: scrollYProgressPic } = useScroll({
     target: picRef,
@@ -37,25 +46,21 @@ const LearnMore = ({
 
   const yPosAnimGreen = useTransform(
     scrollYProgressGreen,
-    [0, 0.3, 1],
-    [0, 100, 500]
+    aboutPage ? [0, 1] : [0, 0.3, 1],
+    aboutPage ? (width > 1024 ? [-100, 450] : [-240, 0]) : [0, 100, 500]
   );
 
   const yPosAnimBlue = useTransform(
     scrollYProgressBlue,
     [0, 1],
-    [-400, 50]
+    aboutPage ? (width > 1024 ? [-100, 140] : (width > 768 ? [-300, 85] : [-17, -17])) : [-400, 50]
   );
 
   const yPosAnimPic = useTransform(
     scrollYProgressPic,
     [0, 1],
     [-80, 20]
-  );
-
-
-  const { width } = useWindowDimensions();
-  const isMobile = width < 768;
+  );  
 
   const finalGap = gap ? gap : "gap-x-12 md:gap-x-12 lg:gap-x-12";
   const finalBGClass = bgClass
@@ -71,20 +76,20 @@ const LearnMore = ({
 
   return (
     <section
-      className="w-full h-auto md:h-[100vh] lg:h-[100vh]   flex-initial h-auto
-                    break-words "
+      className={`w-full h-auto lg:h-[100vh]   flex-initial h-auto
+                    break-words ${sectionClass ? sectionClass : 'md:h-[100vh]'}`}
     >
       <div
         className={`grid grid-cols-1 md:grid-cols-2 ${finalGap} 
-                      max-w-[1400px] h-auto md:h-[100vh] lg:h-[100vh] py-5 md:py-0 px-8 md:px-4 lg:px-8 lg:pr-0
-                    mx-auto ${itemsCenter ? "items-center" : ""} relative  content-center`}
+                      max-w-[1400px] h-auto ${heightClass ? heightClass : 'md:h-[100vh]'} lg:h-[100vh] ${boxClass ? boxClass : 'py-5 md:py-0 px-8 md:px-4 lg:px-8 lg:pr-0'}
+                    mx-auto ${itemsCenter ? "items-center" : ""} relative  ${contentCenter ? 'content-center' : 'lg:content-center'}`}
       >
-        <div className={`${colOneOrderSM} md:pl-4 md:order-first  relative`}>
+        <div className={`${colOneOrderSM} ${leftPadding ? leftPadding : 'md:pl-4'} md:order-first  relative`}>
           <div className={`${svgGreen} `}>
             {isAnimateGreen ? (
               <motion.small
                 style={{ x: !isMobile ? yPosAnimGreen : "" }}
-                className="block"
+                className="block relative z-[0]"
                 ref={svgRefGreen}
               >
                 <svg
@@ -117,7 +122,7 @@ const LearnMore = ({
           <motion.div  className={`  ${finalBGClass} overflow-hidden rounded-full`} ref={picRef} style={{y:!isMobile ? yPosAnimPic : "" }} transition={{ duration: 30 }}>
           <div
             className={` hover:transition-all ease-in-out duration-500	hover:scale-[1.2]  bg-cta-image bg-contain bg-center bg-no-repeat  mr-8
-                                  rounded-full  w-[100%] h-[100%]`}
+                                  rounded-full  w-[100%] h-[100%] relative`}
           ></div>
           </motion.div>
 
@@ -127,8 +132,8 @@ const LearnMore = ({
 
               className="block "
               ref={svgRefBlue}
-              style={{ y:  yPosAnimBlue  }}
-              transition={{ duration: 30 }}
+              style={{ x: aboutPage ? -30 : 0, y:  yPosAnimBlue  }}
+              transition={{ duration: 50 }}
             >
               {" "}
               <svg
@@ -153,8 +158,8 @@ const LearnMore = ({
 
         <div className={`${secondColClass} ${colTwoOrderSM} md:px-5 lg:px-0 md:order-last xl:w-[662px] px-4 letter-spacing-06 md:letter-spacing-0`}>
           <h3
-            className={`text-sm-medium md:text-lg-medium tracking-[-1px] 
-                                    text-left text-athinia-dark mb-[20px] ${textClass}`}
+            className={`text-sm-medium md:text-lg-medium 
+                                    text-left text-athinia-dark mb-[20px] ${textClass ? textClass : 'tracking-[-1px]'}`}
           >
             {text}
           </h3>

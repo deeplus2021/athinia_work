@@ -31,7 +31,7 @@ const TheSolution = () => {
           </span>
           <h1
             className="text-sm-medium
-                                    text-left text-athinia-green px-3"
+                                    text-left text-athinia-green px-4 md:px-3"
           >
             <span>The Solution </span>
           </h1>

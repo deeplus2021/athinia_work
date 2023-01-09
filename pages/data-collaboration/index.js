@@ -35,12 +35,26 @@ const Home = () => {
       <div className="flex min-h-screen flex-col items-center justify-center ">
         <Head>
           <title>
-            Athinia &#x2022; Smart data collection & collaborative analytics
+            Data Collaboration &#x2022; Athinia
           </title>
           <meta
             name="description"
-            content="Check out iPhone 12 XR Pro and iPhone 12 Pro Max. Visit your local store and for expert advice."
+            content="Building a data ecosystem to help the semiconductor industry focus time and resources where it matters most. Athinia™ provides a secure data analytics platform for collaborating on relevant information from material suppliers and device makers."
           />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="article" />
+          <meta property="og:title" content="Data Collaboration • Athinia" />
+          <meta property="og:description" content="Building a data ecosystem to help the semiconductor industry focus time and resources where it matters most. Athinia™ provides a secure data analytics platform for collaborating on relevant information from material suppliers and device makers." />
+          <meta property="og:url" content="https://athinia.com/data-collaboration/" />
+          <meta property="og:site_name" content="Athinia" />
+          <meta property="article:modified_time" content="2022-11-03T15:49:06+00:00" />
+          <meta property="og:image" content="https://athinia.com/wp-content/uploads/2021/10/Athinia-social-thumb.jpg" />
+          <meta property="og:image:width" content="800" />
+          <meta property="og:image:height" content="533" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:label1" content="Est. reading time" />
+          <meta name="twitter:data1" content="5 minutes" />
           <link rel="icon" href="/cropped-Athinia-favicon-150x150.png" />
         </Head>
         <ImageText />
@@ -52,11 +66,13 @@ const Home = () => {
           title={'Case Studies'} 
           cardData={cardData}
           sectionClass='sm:py-[8%] md:py-[13%] md:px-[2em] lg:px-0 lg:py-[9%]'
-          titleClass='md:p-[10px_3px_10px_3px]'
+          titleClass='p-[4.3rem_2rem_3.3rem_2rem] md:p-[10px_3px_10px_3px]'
           contentClass="my-6 md:mt-4 lg:mb-6"
+          titleFontSize="text-sm-medium text-[2em]"
+          boxTitleFontSize="text-[1.68em] line-height-14 md:line-height-15"
           />
         <GetInContact
-          extraClass="p-[12%_0%_16%_0%] pl-[2rem] pr-[2rem] md:pr-[3rem] md:px-0 md:pt-[12%] lg:pt-[8%]"
+          extraClass="p-[12%_0%_12%_0%] md:p-[12%_0%_16%_0%] pl-[2rem] pr-[2rem] md:pr-[3rem] md:px-0 md:pt-[12%] lg:pt-[8%]"
           isException={true}
         />
       </div>

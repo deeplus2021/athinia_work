@@ -4,16 +4,16 @@ const ThreeCol = () => {
   return (
     <section
       className="w-full flex-initial h-auto
-                    break-words mt-10"
+                    break-words mt-10 md:mt-[7rem] lg:mt-[8.5rem] md:mb-[8.5rem] lg:mb-[3rem]"
     >
       <div
-        className="grid grid-cols-1 lg:grid-cols-2   min-h-[64vh] lg:min-h-[80vh] max-w-screen-xl p-[2em] md:p-[0_0%_0%_0%]
+        className="grid grid-cols-1 lg:grid-cols-2   min-h-[64vh] lg:min-h-[80vh] max-w-[1400px] p-[2em_2em_6em_2em] md:p-[0_0%_0%_0%]
                     mx-auto"
       >
-        <div className="text-left md:px-8 lg:px-0">
+        <div className="text-left md:px-8 lg:px-2 lg:pt-[1.2rem]">
           <h3
             className={`text-sm-medium md:text-lg-medium  
-                                    text-left text-athinia-dark mb-[20px] `}
+                                    text-left text-athinia-dark mb-[20px] md:tracking-[-1px] mt-4 md:mt-0`}
           >
             Connecting the semiconductor industry on a single, secure data
             sharing platform.
@@ -22,14 +22,14 @@ const ThreeCol = () => {
             Brought to you by a partnership built on science and technology.
           </p>
           <h3
-            className={`mt-10 text-sm-medium md:text-lg-medium  
-                                    text-left text-athinia-purple mb-[20px] `}
+            className={`text-sm-medium md:text-lg-medium  
+                                    text-left text-athinia-purple mb-[20px] md:tracking-[-1px] line-height-15 mt-[2.2rem]`}
           >
             Athinia™ is a 50/50 partnership between EMD Digital and Palantir
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2  justify-center	">
+        <div className="grid grid-cols-1 md:grid-cols-2  justify-center	mt-[2.75rem] lg:mt-0">
           <div>
             <div className="text-center justify-center	">
               <svg
@@ -45,12 +45,12 @@ const ThreeCol = () => {
               </svg>
               <div
                 className={` hover:text-athinia-dark justify-center	 flex text-lg-small md:text-lg-small 
-                                    text-center text-athinia-green mb-[20px] `}
+                                    text-center text-athinia-green mb-[20px] mt-5 md:mt-2 tracking-[1px]`}
               >
                 <a href="https://www.emdgroup.com/en/company/who-we-are.html" target='_blank'><h3>LEARN MORE</h3></a>
-                <span className="ml-5 mt-1"> <FaArrowRight size={15}/></span>
+                <span className="ml-3 mt-1 lg:mt-[0.2rem]"> <FaArrowRight size={15}/></span>
               </div> 
-              <p className="md:px-10 text-left text-athinia-purple">
+              <p className="md:pl-[2rem] md:pr-[1.5rem] lg:px-[3rem] text-left text-athinia-purple mt-[3.6rem] md:mt-[3rem]">
                 EMD Digital is a novel business unit developing solutions that
                 enable scientists and researchers to make science faster.
                 Athinia™ is legally and organizationally separate from Merck
@@ -60,7 +60,7 @@ const ThreeCol = () => {
           </div>
           <div>
             {" "}
-            <div className="text-center justify-center	">
+            <div className="text-center justify-center	mt-4 md:mt-0">
               <svg
               className="ml-auto mr-auto "
                 width={125}
@@ -84,13 +84,13 @@ const ThreeCol = () => {
               </svg>
               <div
                 className={` hover:text-athinia-dark justify-center	 flex text-lg-small md:text-lg-small 
-                                    text-center text-athinia-green mb-[20px] `}
+                                    text-center text-athinia-green mb-[20px] mt-5 md:mt-2 tracking-[1px]`}
               >
                 <a className="" href="https://www.palantir.com/" target='_blank'>    <h3>LEARN MORE</h3></a>
             
-                <span className="ml-5 mt-1"> <FaArrowRight size={15}/></span>
+                <span className="ml-3 mt-1 lg:mt-[0.2rem]"> <FaArrowRight size={15}/></span>
               </div> 
-              <p className="md:px-10 text-left text-athinia-purple">
+              <p className="md:pl-[1rem] md:pr-[2rem] lg:px-[3rem] text-left text-athinia-purple mt-[3.6rem] md:mt-[3rem]">
                 Palantir is a US software company that specializes in big data
                 analytics. Focused on creating the world’s best user experience
                 for working with data, one that empowers people to ask and
